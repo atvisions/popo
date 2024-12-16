@@ -19,11 +19,11 @@
         <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
           <div class="flex">
             <div class="relative flex items-center gap-x-4 rounded-full bg-white px-4 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              <span class="font-semibold text-indigo-600">We’re hiring</span>
+              <span class="font-semibold text-indigo-600">我们在招聘</span>
               <span class="h-4 w-px bg-gray-900/10" aria-hidden="true"></span>
               <a href="#" class="flex items-center gap-x-1">
                 <span class="absolute inset-0" aria-hidden="true"></span>
-                See open positions
+                查看职位
                 <svg class="-mr-2 size-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                   <path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
                 </svg>
@@ -33,8 +33,8 @@
           <h1 class="mt-10 text-pretty text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">制作你的专业简历</h1>
           <p class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">从生成要点到自动格式化，我们的简历生成器将帮助您快速轻松地制作专业的简历。</p>
           <div class="mt-10 flex items-center gap-x-6">
-            <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
-            <a href="#" class="text-sm/6 font-semibold text-gray-900">Learn more <span aria-hidden="true">→</span></a>
+            <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">开始使用</a>
+            <a href="#" class="text-sm/6 font-semibold text-gray-900">了解更多 <span aria-hidden="true">→</span></a>
           </div>
         </div>
         <div class="mt-16 sm:mt-24 lg:mt-0 lg:shrink-0 lg:grow">
@@ -117,9 +117,9 @@
     <!-- Feature section -->
     <div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
       <div class="mx-auto max-w-2xl lg:text-center">
-        <h2 class="text-base/7 font-semibold text-indigo-600">Deploy faster</h2>
-        <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">Everything you need to deploy your app</p>
-        <p class="mt-6 text-lg/8 text-gray-600">Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum pulvinar et feugiat blandit at. In mi viverra elit nunc.</p>
+        <h2 class="text-base/7 font-semibold text-indigo-600">快速部署</h2>
+        <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">部署应用所需的一切</p>
+        <p class="mt-6 text-lg/8 text-gray-600">我们提供完整的应用部署解决方案，从开发到上线，一站式服务。</p>
       </div>
       <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
         <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
@@ -128,7 +128,7 @@
               <svg class="size-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                 <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 0 1-1.44-8.765 4.5 4.5 0 0 1 8.302-3.046 3.5 3.5 0 0 1 4.504 4.272A4 4 0 0 1 15 17H5.5Zm3.75-2.75a.75.75 0 0 0 1.5 0V9.66l1.95 2.1a.75.75 0 1 0 1.1-1.02l-3.25-3.5a.75.75 0 0 0-1.1 0l-3.25 3.5a.75.75 0 1 0 1.1 1.02l1.95-2.1v4.59Z" clip-rule="evenodd" />
               </svg>
-              Push to deploy
+              一键部署
             </dt>
             <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-600">
               <p class="flex-auto">Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus. Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.</p>
@@ -172,12 +172,12 @@
     <!-- Newsletter section -->
     <div class="mx-auto mt-32 max-w-7xl sm:mt-56 sm:px-6 lg:px-8">
       <div class="relative isolate overflow-hidden bg-gray-900 px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-32">
-        <h2 class="mx-auto max-w-3xl text-center text-4xl font-semibold tracking-tight text-white sm:text-5xl">Get notified when we’re launching</h2>
-        <p class="mx-auto mt-6 max-w-lg text-center text-lg text-gray-300">Reprehenderit ad esse et non officia in nulla. Id proident tempor incididunt nostrud nulla et culpa.</p>
+        <h2 class="mx-auto max-w-3xl text-center text-4xl font-semibold tracking-tight text-white sm:text-5xl">获取发布通知</h2>
+        <p class="mx-auto mt-6 max-w-lg text-center text-lg text-gray-300">订阅我们的通知，第一时间获取最新动态。</p>
         <form class="mx-auto mt-10 flex max-w-md gap-x-4">
-          <label for="email-address" class="sr-only">Email address</label>
-          <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-white sm:text-sm/6" placeholder="Enter your email">
-          <button type="submit" class="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Notify me</button>
+          <label for="email-address" class="sr-only">邮箱地址</label>
+          <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md bg-white/5 px-3.5 py-2 text-base text-white outline outline-1 -outline-offset-1 outline-white/10 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-white sm:text-sm/6" placeholder="请输入您的邮箱">
+          <button type="submit" class="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">通知我</button>
         </form>
         <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 size-[64rem] -translate-x-1/2" aria-hidden="true">
           <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)" fill-opacity="0.7" />
@@ -213,8 +213,8 @@
         </div>
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto max-w-2xl sm:text-center">
-            <h2 class="text-base/7 font-semibold text-indigo-600">Testimonials</h2>
-            <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-5xl">We have worked with thousands of amazing people</p>
+            <h2 class="text-base/7 font-semibold text-indigo-600">用户评价</h2>
+            <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-balance sm:text-5xl">我们已经服务过数千位优秀的用户</p>
           </div>
           <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm/6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
             <figure class="col-span-2 hidden sm:block sm:rounded-2xl sm:bg-white sm:shadow-lg sm:ring-1 sm:ring-gray-900/5 xl:col-start-2 xl:row-end-1">

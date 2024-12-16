@@ -3,20 +3,78 @@
     <div class="bg-gray-100 py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-4xl text-center">
-      <h2 class="text-base/7 font-semibold text-indigo-600">Pricing</h2>
-      <p class="mt-2 text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-6xl">Pricing that grows with you</p>
+      <h2 class="text-base/7 font-semibold text-indigo-600">定价方案</h2>
+      <p class="mt-2 text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-6xl">灵活的价格方案</p>
     </div>
-    <p class="mx-auto mt-6 max-w-2xl text-pretty text-center text-lg font-medium text-gray-600 sm:text-xl/8">Choose an affordable plan that’s packed with the best features for engaging your audience, creating customer loyalty, and driving sales.</p>
+    <p class="mx-auto mt-6 max-w-2xl text-pretty text-center text-lg font-medium text-gray-600 sm:text-xl/8">选择最适合您的方案，我们提供最优质的功能来吸引用户、提升客户忠诚度和促进销售增长。</p>
 
     <!-- xs to lg -->
     <div class="mx-auto mt-12 max-w-md space-y-8 sm:mt-16 lg:hidden">
       <section class="p-8">
-        <h3 id="tier-starter" class="text-sm/6 font-semibold text-gray-900">Starter</h3>
+        <h3 id="tier-starter" class="text-sm/6 font-semibold text-gray-900">入门版</h3>
         <p class="mt-2 flex items-baseline gap-x-1 text-gray-900">
-          <span class="text-4xl font-semibold">$19</span>
-          <span class="text-sm font-semibold">/month</span>
+          <span class="text-4xl font-semibold">¥19</span>
+          <span class="text-sm font-semibold">/月</span>
         </p>
-        <a href="#" aria-describedby="tier-starter" class="mt-8 block rounded-md px-3 py-2 text-center text-sm/6 font-semibold text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
+        <a href="#" aria-describedby="tier-starter" class="mt-8 block rounded-md px-3 py-2 text-center text-sm/6 font-semibold text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">购买方案</a>
+        <ul role="list" class="mt-10 space-y-4 text-sm/6 text-gray-900">
+          <li>
+            <ul role="list" class="space-y-4">
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+                <span>边缘内容分发</span>
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+                <span>
+                  自定义域名
+                  <span class="text-sm/6 text-gray-500">(1个)</span>
+                </span>
+              </li>
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+                <span>
+                  团队成员
+                  <span class="text-sm/6 text-gray-500">(3人)</span>
+                </span>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul role="list" class="space-y-4">
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+                <span>高级分析</span>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul role="list" class="space-y-4">
+              <li class="flex gap-x-3">
+                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
+                </svg>
+                <span>24/7 在线支持</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section class="rounded-xl bg-gray-400/5 p-8 ring-1 ring-inset ring-gray-200">
+        <h3 id="tier-growth" class="text-sm/6 font-semibold text-gray-900">成长版</h3>
+        <p class="mt-2 flex items-baseline gap-x-1 text-gray-900">
+          <span class="text-4xl font-semibold">¥49</span>
+          <span class="text-sm font-semibold">/月</span>
+        </p>
+        <a href="#" aria-describedby="tier-growth" class="mt-8 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm/6 font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
         <ul role="list" class="mt-10 space-y-4 text-sm/6 text-gray-900">
           <li>
             <ul role="list" class="space-y-4">
@@ -42,64 +100,6 @@
                 <span>
                   Team members
                   <span class="text-sm/6 text-gray-500">(3)</span>
-                </span>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <ul role="list" class="space-y-4">
-              <li class="flex gap-x-3">
-                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                </svg>
-                <span> Advanced analytics </span>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <ul role="list" class="space-y-4">
-              <li class="flex gap-x-3">
-                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                </svg>
-                <span> 24/7 online support </span>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-      <section class="rounded-xl bg-gray-400/5 p-8 ring-1 ring-inset ring-gray-200">
-        <h3 id="tier-growth" class="text-sm/6 font-semibold text-gray-900">Growth</h3>
-        <p class="mt-2 flex items-baseline gap-x-1 text-gray-900">
-          <span class="text-4xl font-semibold">$49</span>
-          <span class="text-sm font-semibold">/month</span>
-        </p>
-        <a href="#" aria-describedby="tier-growth" class="mt-8 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm/6 font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
-        <ul role="list" class="mt-10 space-y-4 text-sm/6 text-gray-900">
-          <li>
-            <ul role="list" class="space-y-4">
-              <li class="flex gap-x-3">
-                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                </svg>
-                <span> Edge content delivery </span>
-              </li>
-              <li class="flex gap-x-3">
-                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                </svg>
-                <span>
-                  Custom domains
-                  <span class="text-sm/6 text-gray-500">(3)</span>
-                </span>
-              </li>
-              <li class="flex gap-x-3">
-                <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                  <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                </svg>
-                <span>
-                  Team members
-                  <span class="text-sm/6 text-gray-500">(20)</span>
                 </span>
               </li>
             </ul>
@@ -139,10 +139,10 @@
         </ul>
       </section>
       <section class="p-8">
-        <h3 id="tier-scale" class="text-sm/6 font-semibold text-gray-900">Scale</h3>
+        <h3 id="tier-scale" class="text-sm/6 font-semibold text-gray-900">企业版</h3>
         <p class="mt-2 flex items-baseline gap-x-1 text-gray-900">
-          <span class="text-4xl font-semibold">$99</span>
-          <span class="text-sm font-semibold">/month</span>
+          <span class="text-4xl font-semibold">¥99</span>
+          <span class="text-sm font-semibold">/月</span>
         </p>
         <a href="#" aria-describedby="tier-scale" class="mt-8 block rounded-md px-3 py-2 text-center text-sm/6 font-semibold text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
         <ul role="list" class="mt-10 space-y-4 text-sm/6 text-gray-900">
@@ -277,22 +277,22 @@
               <th scope="row"><span class="sr-only">Price</span></th>
               <td class="px-6 pt-2 xl:px-8">
                 <div class="flex items-baseline gap-x-1 text-gray-900">
-                  <span class="text-4xl font-semibold">$19</span>
-                  <span class="text-sm/6 font-semibold">/month</span>
+                  <span class="text-4xl font-semibold">¥19</span>
+                  <span class="text-sm/6 font-semibold">/月</span>
                 </div>
-                <a href="#" class="mt-8 block rounded-md px-3 py-2 text-center text-sm/6 font-semibold text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
+                <a href="#" class="mt-8 block rounded-md px-3 py-2 text-center text-sm/6 font-semibold text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">购买方案</a>
               </td>
               <td class="px-6 pt-2 xl:px-8">
                 <div class="flex items-baseline gap-x-1 text-gray-900">
-                  <span class="text-4xl font-semibold">$49</span>
-                  <span class="text-sm/6 font-semibold">/month</span>
+                  <span class="text-4xl font-semibold">¥49</span>
+                  <span class="text-sm/6 font-semibold">/月</span>
                 </div>
                 <a href="#" class="mt-8 block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm/6 font-semibold text-white hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
               </td>
               <td class="px-6 pt-2 xl:px-8">
                 <div class="flex items-baseline gap-x-1 text-gray-900">
-                  <span class="text-4xl font-semibold">$99</span>
-                  <span class="text-sm/6 font-semibold">/month</span>
+                  <span class="text-4xl font-semibold">¥99</span>
+                  <span class="text-sm/6 font-semibold">/月</span>
                 </div>
                 <a href="#" class="mt-8 block rounded-md px-3 py-2 text-center text-sm/6 font-semibold text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Buy plan</a>
               </td>

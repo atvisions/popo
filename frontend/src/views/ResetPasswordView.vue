@@ -1,203 +1,299 @@
 <template>
-    <HeadView />
-    <div class="bg-gray-100">
-        <div class="flex min-h-full items-center justify-center px-4 py-10 sm:px-6 lg:px-8">
-            <div class="w-full max-w-sm space-y-10">
-                <div>
-                    <h2 class="mt-10 text-center text-2xl/9 font-bold tracking-tight text-gray-900">重置密码</h2>
-                </div>
-
-                <form class="space-y-6" @submit.prevent="handleResetPassword">
-                    <div>
-                        <div class="col-span-2">
-                            <input type="tel" required
-                                class="block w-full rounded-t-md bg-white px-3 py-1.5 text-sm text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-0"
-                                placeholder="请输入手机号"
-                                v-model="form.phone"
-                            >
-                        </div>
-                        <div class="-mt-px flex">
-                            <input type="text" required
-                                class="block w-full bg-white px-3 py-1.5 text-sm text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-0"
-                                placeholder="请输入验证码"
-                                v-model="form.code"
-                            >
-                            <button type="button" 
-                                class="bg-indigo-600 px-8 text-sm text-white hover:bg-indigo-500 whitespace-nowrap disabled:bg-gray-400"
-                                @click="sendCode"
-                                :disabled="countdown > 0"
-                            >
-                                {{ countdown > 0 ? `${countdown}秒后重试` : '获取验证码' }}
-                            </button>
-                        </div>
-                        <div class="-mt-px">
-                            <input type="password" required
-                                class="block w-full bg-white px-3 py-1.5 text-[14px] text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-0"
-                                placeholder="请输入新密码"
-                                v-model="form.new_password"
-                            >
-                        </div>
-                        <div class="-mt-px">
-                            <input type="password" required
-                                class="block w-full rounded-b-md bg-white px-3 py-1.5 text-[14px] text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-none focus:ring-0"
-                                placeholder="请确认新密码"
-                                v-model="form.confirm_password"
-                            >
-                        </div>
-                    </div>
-
-                    <button type="submit" 
-                        class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-[14px] font-semibold leading-6 text-white hover:bg-indigo-500"
-                        :disabled="loading"
-                    >
-                        {{ loading ? '提交中...' : '重置密码' }}
-                    </button>
-
-                    <p class="text-center text-sm text-gray-500">
-                        <router-link to="/login" class="font-semibold text-indigo-600 hover:text-indigo-500">返回登录</router-link>
-                    </p>
-                </form>
-            </div>
-        </div>
+  <HeadView />
+  <div class="min-h-screen bg-gray-50 pt-14">
+     <!-- Logo 部分 -->
+    <div class="sm:mx-auto sm:w-full sm:max-w-md pt-8">
+      <h2 class="mt-6 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">重置密码</h2>
     </div>
-    <FootView />
-    <ToastMessage ref="toast"/>
+    <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-[480px]">
+      <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-[480px]">
+        <div class="bg-white px-6 py-12 shadow sm:rounded-lg sm:px-12">
+          <form class="space-y-6" @submit.prevent="handleResetPassword">
+            <!-- 手机号输入 -->
+            <div>
+              <label for="phone" class="block text-sm font-medium leading-6 text-gray-900">手机号</label>
+              <div class="mt-2">
+                <input 
+                  id="phone" 
+                  v-model="phone" 
+                  type="text" 
+                  required
+                  placeholder="请输入手机号"
+                  class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" 
+                />
+              </div>
+            </div>
+
+            <!-- 验证码输入 -->
+            <div>
+              <label for="code" class="block text-sm font-medium leading-6 text-gray-900">验证码</label>
+              <div class="mt-2 flex">
+                <div class="flex-grow">
+                  <input 
+                    id="code" 
+                    v-model="code" 
+                    type="text" 
+                    required
+                    placeholder="请输入验证码"
+                    class="block w-full rounded-l-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" 
+                  />
+                </div>
+                <button 
+                  type="button"
+                  @click="handleSendCode"
+                  :disabled="countdown > 0 || loading"
+                  class="relative -ml-px inline-flex items-center rounded-r-md px-4 py-2 text-sm font-semibold ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10"
+                  :class="countdown > 0 || loading ? 'text-gray-400 bg-gray-50' : 'text-indigo-600'"
+                >
+                  <svg v-if="loading" class="animate-spin -ml-1 mr-2 h-4 w-4" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                  </svg>
+                  {{ loading ? '发送中...' : countdown > 0 ? `${countdown}s` : '获取验证码' }}
+                </button>
+              </div>
+            </div>
+
+            <!-- 新密码输入 -->
+            <div>
+              <label for="password" class="block text-sm font-medium leading-6 text-gray-900">新密码</label>
+              <div class="mt-2 relative">
+                <input 
+                  id="password" 
+                  v-model="password" 
+                  :type="showPassword ? 'text' : 'password'" 
+                  required
+                  placeholder="请输入新密码"
+                  class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" 
+                />
+                <button 
+                  type="button" 
+                  @click="togglePassword"
+                  class="absolute inset-y-0 right-0 pr-3 flex items-center"
+                >
+                  <svg v-if="showPassword" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  </svg>
+                  <svg v-else class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- 确认密码输入 -->
+            <div>
+              <label for="confirm-password" class="block text-sm font-medium leading-6 text-gray-900">确认密码</label>
+              <div class="mt-2">
+                <input 
+                  id="confirm-password" 
+                  v-model="confirmPassword" 
+                  type="password" 
+                  required
+                  placeholder="请再次输入密码"
+                  class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" 
+                />
+              </div>
+            </div>
+
+            <!-- 重置密码按钮 -->
+            <div>
+              <button 
+                type="submit" 
+                :disabled="!isFormValid || loading"
+                class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                <svg v-if="loading" class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" fill="none"
+                  viewBox="0 0 24 24">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor"
+                    stroke-width="4"></circle>
+                  <path class="opacity-75" fill="currentColor"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                  </path>
+                </svg>
+                {{ loading ? '重置中...' : '重置密码' }}
+              </button>
+            </div>
+          </form>
+
+          <!-- 登录链接 -->
+          <div>
+            <div class="relative mt-10">
+              <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                <div class="w-full border-t border-gray-200"></div>
+              </div>
+              <div class="relative flex justify-center text-sm font-medium leading-6">
+                <span class="bg-white px-6 text-gray-900">记起密码?</span>
+              </div>
+            </div>
+
+            <div class="mt-6">
+              <router-link 
+                to="/login"
+                class="flex w-full justify-center rounded-md bg-white px-3 py-1.5 text-sm font-semibold leading-6 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                返回登录
+              </router-link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
-<script>
-import axios from 'axios'
+<script setup>
 import HeadView from '@/components/HeadView.vue'
-import FootView from '@/components/FootView.vue'
-import ToastMessage from '@/components/ToastMessage.vue'
+import { showToast } from '@/components/ToastMessage.js'
+import { ref, computed } from 'vue'
+import { useRouter } from 'vue-router'
+import axios from 'axios'
 
-export default {
-    name: 'ResetPasswordView',
-    components: {
-        HeadView,
-        FootView,
-        ToastMessage
-    },
-    data() {
-        return {
-            form: {
-                phone: '',
-                code: '',
-                new_password: '',
-                confirm_password: ''
-            },
-            loading: false,
-            countdown: 0,
-            timer: null
-        }
-    },
-    methods: {
-        showToast(message) {
-            this.$refs.toast.showMessage(message)
-        },
+const router = useRouter()
+const phone = ref('')
+const code = ref('')
+const password = ref('')
+const confirmPassword = ref('')
+const showPassword = ref(false)
+const loading = ref(false)
+const countdown = ref(0)
 
-        // 发送验证码
-        async sendCode() {
-            if (!this.form.phone) {
-                this.showToast('请输入手机号')
-                return
-            }
-            if (!/^1[3-9]\d{9}$/.test(this.form.phone)) {
-                this.showToast('请输入正确的手机号')
-                return
-            }
+// 表单验证
+const isFormValid = computed(() => {
+  return phone.value && 
+         code.value && 
+         password.value &&
+         confirmPassword.value &&
+         password.value === confirmPassword.value &&
+         password.value.length >= 6 &&
+         /^1[3-9]\d{9}$/.test(phone.value)
+})
 
-            try {
-                const response = await axios.post('/api/users/sms/code/', {
-                    phone: this.form.phone,
-                    scene: 'reset_password'  // 重置密码场景
-                })
+// 验证手机号
+const validatePhone = () => {
+  const phoneRegex = /^1[3-9]\d{9}$/
+  if (!phone.value) {
+    showToast('请输入手机号', 'warning')
+    return false
+  }
+  if (!phoneRegex.test(phone.value)) {
+    showToast('请输入正确的手机号', 'warning')
+    return false
+  }
+  return true
+}
 
-                if (response.data.code === 200) {
-                    this.showToast('验证码已发送')
-                    this.countdown = 60
-                    this.timer = setInterval(() => {
-                        if (this.countdown > 0) {
-                            this.countdown--
-                        } else {
-                            clearInterval(this.timer)
-                        }
-                    }, 1000)
-                }
-            } catch (error) {
-                if (error.response) {
-                    const { data } = error.response
-                    if (data.errors) {
-                        const firstError = Object.values(data.errors)[0][0]
-                        this.showToast(firstError)
-                    } else {
-                        this.showToast(data.message || '发送验证码失败')
-                    }
-                } else {
-                    this.showToast('网络错误，请稍后重试')
-                }
-            }
-        },
+// 验证密码
+const validatePassword = () => {
+  if (!password.value) {
+    showToast('请输入新密码', 'warning')
+    return false
+  }
+  if (password.value.length < 6) {
+    showToast('密码长度不能少于6位', 'warning')
+    return false
+  }
+  return true
+}
 
-        // 重置密码
-        async handleResetPassword() {
-            if (!this.form.phone) {
-                this.showToast('请输入手机号')
-                return
-            }
-            if (!this.form.code) {
-                this.showToast('请输入验证码')
-                return
-            }
-            if (!this.form.new_password) {
-                this.showToast('请输入新密码')
-                return
-            }
-            if (!this.form.confirm_password) {
-                this.showToast('请确认新密码')
-                return
-            }
-            if (this.form.new_password !== this.form.confirm_password) {
-                this.showToast('两次输入的密码不一致')
-                return
-            }
+// 验证确认密码
+const validateConfirmPassword = () => {
+  if (!confirmPassword.value) {
+    showToast('请确认密码', 'warning')
+    return false
+  }
+  if (confirmPassword.value !== password.value) {
+    showToast('两次输入的密码不一致', 'warning')
+    return false
+  }
+  return true
+}
 
-            this.loading = true
-            try {
-                const response = await axios.post('/api/users/reset-password/', {
-                    phone: this.form.phone,
-                    code: this.form.code,
-                    new_password: this.form.new_password,
-                    confirm_password: this.form.confirm_password
-                })
-
-                if (response.data.code === 200) {
-                    this.showToast('密码重置成功')
-                    // 延迟跳转到登录页
-                    setTimeout(() => {
-                        this.$router.push('/login')
-                    }, 1500)
-                }
-            } catch (error) {
-                if (error.response) {
-                    const { data } = error.response
-                    if (data.errors) {
-                        const firstError = Object.values(data.errors)[0][0]
-                        this.showToast(firstError)
-                    } else {
-                        this.showToast(data.message || '重置密码失败')
-                    }
-                } else {
-                    this.showToast('网络错误，请稍后重试')
-                }
-            } finally {
-                this.loading = false
-            }
-        }
-    },
-    beforeUnmount() {
-        if (this.timer) {
-            clearInterval(this.timer)
-        }
+// 发送验证码
+const handleSendCode = async () => {
+  if (!validatePhone()) return
+  
+  try {
+    loading.value = true
+    await axios.post('/api/users/sms/code/', {
+      phone: phone.value,
+      scene: 'reset_password'
+    })
+    
+    showToast('验证码已发送', 'success')
+    countdown.value = 60
+    const timer = setInterval(() => {
+      countdown.value--
+      if (countdown.value <= 0) {
+        clearInterval(timer)
+      }
+    }, 1000)
+  } catch (error) {
+    console.error('发送验证码失败:', error)
+    const errorData = error.response?.data
+    const errorMsg = typeof errorData === 'string' 
+      ? errorData 
+      : errorData?.detail || errorData?.message || JSON.stringify(errorData)
+    
+    if (typeof errorMsg === 'string' && (
+      errorMsg.includes('不存在') || 
+      errorMsg.includes('未注册')
+    )) {
+      showToast('该手机号未注册，请先注册', 'warning')
+      setTimeout(() => {
+        router.push('/register')
+      }, 1500)
+    } else {
+      showToast(errorMsg || '发送验证码失败，请重试', 'error')
     }
+  } finally {
+    loading.value = false
+  }
+}
+
+// 重置密码
+const handleResetPassword = async () => {
+  if (!validatePhone()) return
+  if (!code.value) {
+    showToast('请输入验证码', 'warning')
+    return
+  }
+  if (!validatePassword()) return
+  if (!validateConfirmPassword()) return
+
+  try {
+    loading.value = true
+    await axios.post('/api/users/reset-password/', {
+      phone: phone.value,
+      code: code.value,
+      new_password: password.value,
+      confirm_password: confirmPassword.value
+    })
+
+    showToast('密码重置成功', 'success')
+    setTimeout(() => {
+      router.push('/login')
+    }, 1500)
+  } catch (error) {
+    console.error('重置密码失败:', error)
+    const errorData = error.response?.data
+    const errorMsg = typeof errorData === 'string' 
+      ? errorData 
+      : errorData?.detail || errorData?.message || JSON.stringify(errorData)
+    showToast(errorMsg || '重置密码失败，请重试', 'error')
+  } finally {
+    loading.value = false
+  }
+}
+
+// 切换密码显示
+const togglePassword = () => {
+  showPassword.value = !showPassword.value
 }
 </script> 

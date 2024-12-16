@@ -4,6 +4,7 @@ import App from './App.vue'
 import router from './router'
 import axios from 'axios'
 import './assets/css/input.css'
+import { showToast } from '@/components/ToastMessage'
 
 // axios 配置
 axios.defaults.headers.common['Content-Type'] = 'application/json'
@@ -25,6 +26,7 @@ axios.interceptors.response.use(
             if (error.response.status === 401) {
                 localStorage.removeItem('access_token')
                 localStorage.removeItem('refresh_token')
+                showToast('登录已过期，请重新登录', 'warning')
                 router.push('/login')
             }
         }
@@ -35,4 +37,8 @@ axios.interceptors.response.use(
 const app = createApp(App)
 app.use(router)
 app.config.globalProperties.$axios = axios
+
+// 添加全局 Toast 方法
+app.config.globalProperties.$toast = showToast
+
 app.mount('#app')
