@@ -1,0 +1,1396 @@
+INFO 2024-12-20 12:20:54,310 autoreload 1930 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 12:21:29,439 autoreload 1930 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 12:21:29,795 autoreload 1956 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 12:21:36,636 views 1956 6133329920 收到获取微信二维码请求
+INFO 2024-12-20 12:21:36,636 views 1956 6133329920 Generated QR code URL: https://open.weixin.qq.com/connect/qrconnect?appid=wx5033f551492a5074&redirect_uri=http%3A%2F%2F192.168.3.16%3A8000%2Fapi%2Fusers%2Fwechat%2Fcallback&response_type=code&scope=snsapi_login&state=edebffcc-d8f7-4f83-9dbc-83c88c1cb3bd#wechat_redirect
+INFO 2024-12-20 12:21:36,636 views 1956 6133329920 Redirect URI: http://192.168.3.16:8000/api/users/wechat/callback
+INFO 2024-12-20 12:24:53,331 autoreload 2086 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 12:25:10,989 autoreload 2118 8426862656 Watching for file changes with StatReloader
+WARNING 2024-12-20 12:25:19,600 log 2118 6163623936 Not Found: /
+WARNING 2024-12-20 12:25:25,046 log 2118 6163623936 Not Found: /api
+WARNING 2024-12-20 12:25:33,364 log 2118 6163623936 Not Found: /api/users
+INFO 2024-12-20 12:28:37,487 autoreload 2118 8426862656 /Users/liuzhao/Documents/Projects/popowork/config/settings.py changed, reloading.
+INFO 2024-12-20 12:28:37,857 autoreload 2186 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 12:28:57,796 autoreload 2214 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 12:29:39,837 views 2214 6230175744 收到获取微信二维码请求
+INFO 2024-12-20 12:29:39,837 views 2214 6230175744 Generated QR code URL: https://open.weixin.qq.com/connect/qrconnect?appid=wx5033f551492a5074&redirect_uri=http%3A%2F%2Fwww.popo.work%3A8000%2Fapi%2Fusers%2Fwechat%2Fcallback&response_type=code&scope=snsapi_login&state=1d009e71-1570-4aa3-ae47-3e1ada17c709#wechat_redirect
+INFO 2024-12-20 12:29:39,837 views 2214 6230175744 Redirect URI: http://www.popo.work:8000/api/users/wechat/callback
+INFO 2024-12-20 12:34:39,927 views 2214 6213349376 收到获取微信二维码请求
+INFO 2024-12-20 12:34:39,974 views 2214 6213349376 Generated QR code URL: https://open.weixin.qq.com/connect/qrconnect?appid=wx5033f551492a5074&redirect_uri=http%3A%2F%2Fwww.popo.work%3A8000%2Fapi%2Fusers%2Fwechat%2Fcallback&response_type=code&scope=snsapi_login&state=459af4f7-cbef-4c2e-9f5e-3446b6238a5f#wechat_redirect
+INFO 2024-12-20 12:34:39,974 views 2214 6213349376 Redirect URI: http://www.popo.work:8000/api/users/wechat/callback
+INFO 2024-12-20 12:37:46,596 autoreload 2214 8426862656 /Users/liuzhao/Documents/Projects/popowork/config/settings.py changed, reloading.
+INFO 2024-12-20 12:37:47,113 autoreload 2948 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 12:38:33,850 views 2948 6189051904 收到获取微信二维码请求
+INFO 2024-12-20 12:38:33,852 views 2948 6189051904 Generated QR code URL: https://open.weixin.qq.com/connect/qrconnect?appid=wx5033f551492a5074&redirect_uri=http%3A%2F%2Fpopo.work%2Fapi%2Fusers%2Fwechat%2Fcallback&response_type=code&scope=snsapi_login&state=953b18f2-5d07-40f7-98e9-c5fdd63d3b64#wechat_redirect
+INFO 2024-12-20 12:38:33,852 views 2948 6189051904 Redirect URI: http://popo.work/api/users/wechat/callback
+INFO 2024-12-20 12:42:50,016 autoreload 2948 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 12:42:50,401 autoreload 3078 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 12:45:54,319 autoreload 3078 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 12:45:54,689 autoreload 3296 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 12:46:03,703 views 3296 6201651200 收到获取微信二维码请求
+INFO 2024-12-20 12:46:03,703 views 3296 6201651200 Generated QR code URL: https://open.weixin.qq.com/connect/qrconnect?appid=wx5033f551492a5074&redirect_uri=http%3A%2F%2Fpopo.work%2Fapi%2Fusers%2Fwechat%2Fcallback&response_type=code&scope=snsapi_login&state=083fff11-4ba1-4e1b-b3fa-85aa6979775b#wechat_redirect
+INFO 2024-12-20 12:46:03,703 views 3296 6201651200 Redirect URI: http://popo.work/api/users/wechat/callback
+INFO 2024-12-20 12:55:29,221 autoreload 3296 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 12:55:29,606 autoreload 3457 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 12:56:10,641 autoreload 3457 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 12:56:11,006 autoreload 3482 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 12:56:22,600 autoreload 3508 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 12:56:29,530 views 3508 6190903296 收到获取微信二维码请求
+INFO 2024-12-20 12:56:29,531 views 3508 6190903296 Generated QR code URL: https://open.weixin.qq.com/connect/qrconnect?appid=wx5033f551492a5074&redirect_uri=http%3A%2F%2Fpopo.work%2Fapi%2Fusers%2Fwechat%2Fcallback&response_type=code&scope=snsapi_login&state=11f43c50-7a68-47da-8ee9-b2ccc15debe0#wechat_redirect
+INFO 2024-12-20 12:56:29,531 views 3508 6190903296 Redirect URI: http://popo.work/api/users/wechat/callback
+INFO 2024-12-20 13:01:27,289 autoreload 3508 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 13:01:27,677 autoreload 3717 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 13:14:19,219 views 3717 6127022080 收到获取微信二维码请求
+INFO 2024-12-20 13:14:19,220 views 3717 6127022080 Generated QR code URL: https://open.weixin.qq.com/connect/qrconnect?appid=wx5033f551492a5074&redirect_uri=http%3A%2F%2Fpopo.work%2Fapi%2Fusers%2Fwechat%2Fcallback&response_type=code&scope=snsapi_login&state=f204e0bc-107d-41c1-8189-48af5dfcb7b1#wechat_redirect
+INFO 2024-12-20 13:14:19,220 views 3717 6127022080 Redirect URI: http://popo.work/api/users/wechat/callback
+INFO 2024-12-20 13:19:23,909 views 3717 6127022080 收到获取微信二维码请求
+INFO 2024-12-20 13:19:23,909 views 3717 6127022080 Generated QR code URL: https://open.weixin.qq.com/connect/qrconnect?appid=wx5033f551492a5074&redirect_uri=http%3A%2F%2Fpopo.work%2Fapi%2Fusers%2Fwechat%2Fcallback&response_type=code&scope=snsapi_login&state=0799d134-08fc-44ae-8df1-7e99737b3880#wechat_redirect
+INFO 2024-12-20 13:19:23,909 views 3717 6127022080 Redirect URI: http://popo.work/api/users/wechat/callback
+INFO 2024-12-20 13:23:23,249 autoreload 3717 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 13:23:23,619 autoreload 4950 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 13:27:16,568 views 4950 6190051328 收到获取微信二维码请求
+INFO 2024-12-20 13:27:16,569 views 4950 6190051328 Generated QR code URL: https://open.weixin.qq.com/connect/qrconnect?appid=wx5033f551492a5074&redirect_uri=http%3A%2F%2Fpopo.work%2Fapi%2Fusers%2Fwechat%2Fcallback&response_type=code&scope=snsapi_login&state=df602af3-a374-48e6-b9b5-e33c7dc17d41#wechat_redirect
+INFO 2024-12-20 13:27:16,570 views 4950 6190051328 Redirect URI: http://popo.work/api/users/wechat/callback
+INFO 2024-12-20 13:31:39,994 autoreload 4950 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 13:31:40,357 autoreload 5133 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 13:31:49,178 views 5133 6121959424 收到获取微信二维码请求
+INFO 2024-12-20 13:31:49,179 views 5133 6121959424 Generated QR code URL: https://open.weixin.qq.com/connect/qrconnect?appid=wx5033f551492a5074&redirect_uri=http%3A%2F%2Fpopo.work%2Fapi%2Fusers%2Fwechat%2Fcallback&response_type=code&scope=snsapi_login&state=6b8b1aba-b20e-4ed4-9691-98e0acfc3831#wechat_redirect
+INFO 2024-12-20 13:31:49,179 views 5133 6121959424 Redirect URI: http://popo.work/api/users/wechat/callback
+INFO 2024-12-20 13:40:26,073 autoreload 5407 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 13:40:32,905 views 5407 6205288448 收到获取微信二维码请求
+INFO 2024-12-20 13:40:32,921 views 5407 6205288448 Generated QR code URL: https://open.weixin.qq.com/connect/qrconnect?appid=wx5033f551492a5074&redirect_uri=http%3A%2F%2Fpopo.work%2Fapi%2Fusers%2Fwechat%2Fcallback&response_type=code&scope=snsapi_login&state=4453374f-2907-4582-8883-5948ea1d4a33#wechat_redirect
+INFO 2024-12-20 13:40:32,921 views 5407 6205288448 Redirect URI: http://popo.work/api/users/wechat/callback
+INFO 2024-12-20 13:41:48,153 views 5407 6222114816 收到微信回调请求
+INFO 2024-12-20 13:41:48,155 views 5407 6222114816 请求参数: <QueryDict: {'code': ['001bUu200ejsqT1VYq100q7y4B4bUu2X'], 'state': ['4453374f-2907-4582-8883-5948ea1d4a33']}>
+INFO 2024-12-20 13:41:48,155 views 5407 6222114816 请求头: {'Content-Length': '', 'Content-Type': 'text/plain', 'Host': 'popo.work', 'X-Real-Ip': '192.168.3.3', 'X-Forwarded-For': '192.168.3.3', 'Connection': 'close', 'Upgrade-Insecure-Requests': '1', 'User-Agent': 'Mozilla/5.0 (Linux; Android 14; PFEM10 Build/UKQ1.230924.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/130.0.6723.103 Mobile Safari/537.36 XWEB/1300149 MMWEBSDK/20241103 MMWEBID/8409 MicroMessenger/8.0.54.2760(0x28003653) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/wxpic,image/tpg,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7', 'X-Requested-With': 'com.tencent.mm', 'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7'}
+INFO 2024-12-20 13:41:48,155 views 5407 6222114816 Code: 001bUu200ejsqT1VYq100q7y4B4bUu2X
+INFO 2024-12-20 13:41:48,155 views 5407 6222114816 State: 4453374f-2907-4582-8883-5948ea1d4a33
+INFO 2024-12-20 13:41:48,683 views 5407 6222114816 微信token响应: {'errcode': 40125, 'errmsg': 'invalid appsecret, rid: 6765039c-162860bf-67df8729'}
+ERROR 2024-12-20 13:41:48,683 views 5407 6222114816 获取微信token失败: {'errcode': 40125, 'errmsg': 'invalid appsecret, rid: 6765039c-162860bf-67df8729'}
+ERROR 2024-12-20 13:41:48,684 views 5407 6222114816 微信回调处理失败
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 922, in get
+    return self.redirect_to_frontend(error='wx_token_error')
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 1018, in redirect_to_frontend
+    base_url = f"{settings.FRONTEND_URL}/login-error"    # 登录错误页面
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'FRONTEND_URL'
+ERROR 2024-12-20 13:41:48,746 log 5407 6222114816 Internal Server Error: /api/users/wechat/callback/
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 922, in get
+    return self.redirect_to_frontend(error='wx_token_error')
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 1018, in redirect_to_frontend
+    base_url = f"{settings.FRONTEND_URL}/login-error"    # 登录错误页面
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'FRONTEND_URL'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 1007, in get
+    return self.redirect_to_frontend(error='system_error')
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 1018, in redirect_to_frontend
+    base_url = f"{settings.FRONTEND_URL}/login-error"    # 登录错误页面
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'FRONTEND_URL'
+INFO 2024-12-20 13:47:20,314 autoreload 5407 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 13:47:20,687 autoreload 5616 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 13:48:20,043 autoreload 5616 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 13:48:20,417 autoreload 5636 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 13:48:24,147 views 5636 6161444864 收到获取微信二维码请求
+INFO 2024-12-20 13:48:24,148 views 5636 6161444864 Generated QR code URL: https://open.weixin.qq.com/connect/qrconnect?appid=wx5033f551492a5074&redirect_uri=http%3A%2F%2Fpopo.work%2Fapi%2Fusers%2Fwechat%2Fcallback&response_type=code&scope=snsapi_login&state=336f51d9-2e97-4af9-8ef7-4580f93786c1#wechat_redirect
+INFO 2024-12-20 13:48:24,149 views 5636 6161444864 Redirect URI: http://popo.work/api/users/wechat/callback
+INFO 2024-12-20 13:49:21,357 views 5636 6161444864 收到获取微信二维码请求
+INFO 2024-12-20 13:49:21,358 views 5636 6161444864 Generated QR code URL: https://open.weixin.qq.com/connect/qrconnect?appid=wx5033f551492a5074&redirect_uri=http%3A%2F%2Fpopo.work%2Fapi%2Fusers%2Fwechat%2Fcallback&response_type=code&scope=snsapi_login&state=3d6c0b7d-eba1-484d-a0fa-b51cca4ec772#wechat_redirect
+INFO 2024-12-20 13:49:21,358 views 5636 6161444864 Redirect URI: http://popo.work/api/users/wechat/callback
+INFO 2024-12-20 13:50:41,400 views 5636 6161444864 收到获取微信二维码请求
+INFO 2024-12-20 13:50:41,402 views 5636 6161444864 Generated QR code URL: https://open.weixin.qq.com/connect/qrconnect?appid=wx5033f551492a5074&redirect_uri=http%3A%2F%2Fpopo.work%2Fapi%2Fusers%2Fwechat%2Fcallback&response_type=code&scope=snsapi_login&state=8a139b4a-e68e-4544-a967-3a1d1f295b6a#wechat_redirect
+INFO 2024-12-20 13:50:41,402 views 5636 6161444864 Redirect URI: http://popo.work/api/users/wechat/callback
+INFO 2024-12-20 13:50:54,643 views 5636 6161444864 收到获取微信二维码请求
+INFO 2024-12-20 13:50:54,643 views 5636 6161444864 Generated QR code URL: https://open.weixin.qq.com/connect/qrconnect?appid=wx5033f551492a5074&redirect_uri=http%3A%2F%2Fpopo.work%2Fapi%2Fusers%2Fwechat%2Fcallback&response_type=code&scope=snsapi_login&state=28467aa6-42fd-4e9e-9fbc-92af2a1ce1b1#wechat_redirect
+INFO 2024-12-20 13:50:54,643 views 5636 6161444864 Redirect URI: http://popo.work/api/users/wechat/callback
+INFO 2024-12-20 13:51:10,414 views 5636 6161444864 === 微信回调开始 ===
+INFO 2024-12-20 13:51:10,415 views 5636 6161444864 完整URL: http://popo.work/api/users/wechat/callback/?code=0912DZGa18XFII0k0wGa1ZBDYz42DZGe&state=28467aa6-42fd-4e9e-9fbc-92af2a1ce1b1
+INFO 2024-12-20 13:51:10,415 views 5636 6161444864 GET参数: <QueryDict: {'code': ['0912DZGa18XFII0k0wGa1ZBDYz42DZGe'], 'state': ['28467aa6-42fd-4e9e-9fbc-92af2a1ce1b1']}>
+ERROR 2024-12-20 13:51:10,532 views 5636 6161444864 获取access_token失败: {'errcode': 40125, 'errmsg': 'invalid appsecret, rid: 676505ce-6fd97499-0a6cf962'}
+ERROR 2024-12-20 13:51:10,532 views 5636 6161444864 处理微信回调异常:
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 909, in get
+    return self.redirect_to_frontend(error='wx_token_error')
+AttributeError: 'WeChatCallbackView' object has no attribute 'redirect_to_frontend'
+ERROR 2024-12-20 13:51:10,570 log 5636 6161444864 Internal Server Error: /api/users/wechat/callback/
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 909, in get
+    return self.redirect_to_frontend(error='wx_token_error')
+AttributeError: 'WeChatCallbackView' object has no attribute 'redirect_to_frontend'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 56, in wrapper_view
+    return view_func(*args, **kwargs)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 922, in get
+    return self.redirect_to_frontend(error='system_error')
+AttributeError: 'WeChatCallbackView' object has no attribute 'redirect_to_frontend'
+INFO 2024-12-20 13:53:16,316 views 5636 6161444864 收到获取微信二维码请求
+INFO 2024-12-20 13:53:16,388 views 5636 6161444864 Generated QR code URL: https://open.weixin.qq.com/connect/qrconnect?appid=wx5033f551492a5074&redirect_uri=http%3A%2F%2Fpopo.work%2Fapi%2Fusers%2Fwechat%2Fcallback&response_type=code&scope=snsapi_login&state=2aa1ac1f-96da-4cf5-9d62-7d5622955d01#wechat_redirect
+INFO 2024-12-20 13:53:16,389 views 5636 6161444864 Redirect URI: http://popo.work/api/users/wechat/callback
+INFO 2024-12-20 13:58:17,647 views 5636 6161444864 收到获取微信二维码请求
+INFO 2024-12-20 13:58:17,648 views 5636 6161444864 Generated QR code URL: https://open.weixin.qq.com/connect/qrconnect?appid=wx5033f551492a5074&redirect_uri=http%3A%2F%2Fpopo.work%2Fapi%2Fusers%2Fwechat%2Fcallback&response_type=code&scope=snsapi_login&state=da872faf-1044-4d77-93b3-1e2cc1f47dff#wechat_redirect
+INFO 2024-12-20 13:58:17,648 views 5636 6161444864 Redirect URI: http://popo.work/api/users/wechat/callback
+INFO 2024-12-20 13:58:37,657 autoreload 5945 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 13:58:46,018 views 5945 6122663936 收到获取微信二维码请求
+INFO 2024-12-20 13:58:46,018 views 5945 6122663936 Generated QR code URL: https://open.weixin.qq.com/connect/qrconnect?appid=wxda59a6a505b91a89&redirect_uri=http%3A%2F%2Fpopo.work%2Fapi%2Fusers%2Fwechat%2Fcallback&response_type=code&scope=snsapi_login&state=cb775669-89e9-4772-864e-a671931ea297#wechat_redirect
+INFO 2024-12-20 13:58:46,018 views 5945 6122663936 Redirect URI: http://popo.work/api/users/wechat/callback
+INFO 2024-12-20 14:04:36,309 autoreload 5945 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 14:04:36,717 autoreload 6039 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 14:06:02,730 autoreload 6039 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 14:06:03,086 autoreload 6158 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 14:06:08,502 autoreload 6158 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 14:06:08,827 autoreload 6172 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 14:08:46,855 autoreload 6172 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 14:08:47,229 autoreload 6201 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 14:09:11,033 autoreload 6249 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 14:18:11,117 autoreload 6249 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 14:18:11,483 autoreload 6455 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 14:19:44,914 autoreload 6455 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/urls.py changed, reloading.
+INFO 2024-12-20 14:19:45,269 autoreload 6552 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 14:23:45,817 views 6552 6197620736 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:23:45,818 views 6552 6197620736 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 924, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:23:45,821 views 6552 6197620736 生成微信二维码失败
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 879, in get
+    raise Exception("获取access_token失败")
+Exception: 获取access_token失败
+ERROR 2024-12-20 14:23:45,822 log 6552 6197620736 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:25:44,129 autoreload 6552 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 14:25:44,504 autoreload 7175 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 14:32:45,538 autoreload 7371 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 14:32:54,608 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:32:54,609 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:32:54,610 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:32:54,611 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:33:19,427 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:33:19,428 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:33:19,428 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:33:19,429 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:33:22,439 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:33:22,440 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:33:22,440 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:33:22,441 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:33:25,450 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:33:25,450 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:33:25,451 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:33:25,451 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:33:30,872 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:33:30,873 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:33:30,873 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:33:30,873 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:33:33,907 views 7371 6195933184 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:33:33,908 views 7371 6195933184 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:33:33,908 views 7371 6195933184 获取access_token失败
+ERROR 2024-12-20 14:33:33,908 log 7371 6195933184 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:33:36,921 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:33:36,921 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:33:36,921 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:33:36,922 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:33:39,933 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:33:39,934 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:33:39,935 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:33:39,935 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:33:43,258 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:33:43,259 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:33:43,260 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:33:43,260 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:33:46,267 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:33:46,267 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:33:46,267 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:33:46,268 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:33:49,277 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:33:49,277 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:33:49,278 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:33:49,278 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:33:52,292 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:33:52,292 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:33:52,293 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:33:52,293 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:33:55,307 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:33:55,307 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:33:55,308 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:33:55,308 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:33:58,860 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:33:58,861 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:33:58,862 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:33:58,862 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:34:01,895 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:34:01,897 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:34:01,897 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:34:01,898 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:34:04,911 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:34:04,912 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:34:04,912 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:34:04,912 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:34:07,923 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:34:07,924 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:34:07,924 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:34:07,924 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:34:10,960 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:34:10,962 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:34:10,962 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:34:10,962 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:34:13,972 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:34:13,972 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:34:13,972 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:34:13,972 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:34:16,988 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:34:16,989 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:34:16,989 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:34:16,990 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:34:19,997 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:34:19,997 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:34:19,997 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:34:19,998 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:34:23,014 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:34:23,015 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:34:23,015 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:34:23,015 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:34:26,025 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:34:26,026 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:34:26,026 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:34:26,026 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:34:29,128 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:34:29,135 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:34:29,160 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:34:29,191 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:34:32,229 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:34:32,229 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:34:32,230 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:34:32,230 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:34:35,560 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:34:35,567 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:34:35,570 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:34:35,576 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:34:38,632 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:34:38,634 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:34:38,634 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:34:38,635 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:34:41,652 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:34:41,653 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:34:41,653 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:34:41,653 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:34:44,663 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:34:44,664 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:34:44,664 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:34:44,664 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:34:47,670 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:34:47,671 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:34:47,672 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:34:47,672 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:34:50,679 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:34:50,679 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:34:50,679 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:34:50,679 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:34:53,719 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:34:53,719 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:34:53,720 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:34:53,720 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:34:56,734 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:34:56,735 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:34:56,735 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:34:56,735 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:34:59,748 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:34:59,749 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:34:59,749 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:34:59,749 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:35:02,758 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:35:02,758 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:35:02,758 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:35:02,758 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:35:05,766 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:35:05,767 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:35:05,767 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:35:05,767 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:35:08,776 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:35:08,776 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:35:08,776 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:35:08,777 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:35:11,789 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:35:11,789 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:35:11,789 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:35:11,790 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:35:14,797 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:35:14,797 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:35:14,798 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:35:14,798 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:35:17,810 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:35:17,811 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:35:17,811 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:35:17,812 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:35:20,822 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:35:20,822 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:35:20,822 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:35:20,822 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:35:23,882 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:35:23,882 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:35:23,882 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:35:23,883 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:35:26,894 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:35:26,894 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:35:26,894 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:35:26,895 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:35:29,907 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:35:29,908 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:35:29,908 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:35:29,908 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:35:32,918 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:35:32,919 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:35:32,919 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:35:32,919 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:35:35,930 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:35:35,930 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:35:35,931 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:35:35,931 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:35:38,944 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:35:38,944 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:35:38,944 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:35:38,945 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:35:41,955 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:35:41,956 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:35:41,956 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:35:41,957 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:35:44,968 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:35:44,968 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:35:44,970 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:35:44,971 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:35:47,979 views 7371 6162280448 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:35:47,980 views 7371 6162280448 获取access_token异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 892, in get_access_token
+    f"https://api.weixin.qq.com/cgi-bin/token"
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:35:47,980 views 7371 6162280448 获取access_token失败
+ERROR 2024-12-20 14:35:47,980 log 7371 6162280448 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:35:50,595 autoreload 7371 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 14:35:50,971 autoreload 7702 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 14:35:57,895 views 7702 6195605504 收到获取微信服务号二维码请求
+ERROR 2024-12-20 14:35:57,896 views 7702 6195605504 生成微信二维码失败
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 838, in get
+    settings.WECHAT_MP_APP_ID,
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/conf/__init__.py", line 104, in __getattr__
+    val = getattr(_wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WECHAT_MP_APP_ID'
+ERROR 2024-12-20 14:35:57,900 log 7702 6195605504 Internal Server Error: /api/users/wechat/qrcode/
+INFO 2024-12-20 14:41:04,680 views 7702 6195605504 收到微信验证请求: signature=, timestamp=, nonce=
+ERROR 2024-12-20 14:41:04,681 views 7702 6195605504 处理微信验证请求异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 729, in get
+    if self.verify_signature(request):
+AttributeError: 'WeChatMessageView' object has no attribute 'verify_signature'
+INFO 2024-12-20 14:45:07,735 views 7702 6195605504 收到微信验证请求: signature=, timestamp=, nonce=
+ERROR 2024-12-20 14:45:07,736 views 7702 6195605504 处理微信验证请求异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 729, in get
+    if self.verify_signature(request):
+AttributeError: 'WeChatMessageView' object has no attribute 'verify_signature'
+INFO 2024-12-20 14:52:38,860 autoreload 8801 8426862656 Watching for file changes with StatReloader
+WARNING 2024-12-20 14:59:11,827 log 8801 6201995264 Not Found: /
+WARNING 2024-12-20 14:59:12,684 log 8801 6201995264 Not Found: /favicon.ico
+WARNING 2024-12-20 15:01:12,870 log 8801 6201995264 Not Found: /
+WARNING 2024-12-20 15:01:13,639 log 8801 6218821632 Not Found: /favicon.ico
+WARNING 2024-12-20 15:03:52,306 log 8801 6201995264 Not Found: /
+WARNING 2024-12-20 15:04:07,739 log 8801 6218821632 Not Found: /
+INFO 2024-12-20 15:05:32,636 autoreload 8801 8426862656 /Users/liuzhao/Documents/Projects/popowork/config/settings.py changed, reloading.
+INFO 2024-12-20 15:05:33,021 autoreload 10254 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 15:06:30,673 views 10254 6194245632 收到微信验证请求: signature=, timestamp=, nonce=
+ERROR 2024-12-20 15:06:30,674 views 10254 6194245632 处理微信验证请求异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 729, in get
+    if self.verify_signature(request):
+AttributeError: 'WeChatMessageView' object has no attribute 'verify_signature'
+INFO 2024-12-20 15:08:54,349 views 10254 6194245632 收到微信验证请求: signature=, timestamp=, nonce=
+ERROR 2024-12-20 15:08:54,351 views 10254 6194245632 处理微信验证请求异常
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 729, in get
+    if self.verify_signature(request):
+AttributeError: 'WeChatMessageView' object has no attribute 'verify_signature'
+WARNING 2024-12-20 15:08:54,633 log 10254 6194245632 Not Found: /favicon.ico
+INFO 2024-12-20 15:12:01,303 utils 10254 6194245632 
+=== 短信发送请求参数 ===
+手机号: 19279896869
+验证码: 391858
+场景: change_phone
+签名: 上海未智网络科技
+模板ID: SMS_476500294
+====================
+        
+INFO 2024-12-20 15:12:01,304 utils 10254 6194245632 正在发送短信...
+INFO 2024-12-20 15:12:01,765 utils 10254 6194245632 
+=== 短信发送响应信息 ===
+响应代码: OK
+响应消息: OK
+请求ID: 3F3D18DC-4458-5E90-BB52-AA96B7D99A4E
+====================
+        
+ERROR 2024-12-20 15:12:01,771 decorators 10254 6194245632 View error: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django_redis/cache.py", line 81, in set
+    return self.client.set(*args, **kwargs)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django_redis/client/default.py", line 185, in set
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/decorators.py", line 13, in wrapper
+    return view_func(*args, **kwargs)
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 110, in post
+    cache.set(cache_key, code, timeout=Limits.SMS_CODE_EXPIRE_MINUTES * 60)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django_redis/client/default.py", line 175, in set
+    return bool(client.set(nkey, nvalue, nx=nx, px=timeout, xx=xx))
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/redis/commands/core.py", line 2335, in set
+    return self.execute_command("SET", *pieces, **options)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/redis/connection.py", line 1422, in get_connection
+    connection.connect()
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/redis/connection.py", line 363, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2024-12-20 15:12:01,776 log 10254 6194245632 Internal Server Error: /api/users/sms/code/
+INFO 2024-12-20 15:14:26,328 utils 10254 6244724736 
+=== 短信发送请求参数 ===
+手机号: 15021564464
+验证码: 685358
+场景: change_phone
+签名: 上海未智网络科技
+模板ID: SMS_476500294
+====================
+        
+INFO 2024-12-20 15:14:26,328 utils 10254 6244724736 正在发送短信...
+INFO 2024-12-20 15:14:26,582 utils 10254 6244724736 
+=== 短信发送响应信息 ===
+响应代码: OK
+响应消息: OK
+请求ID: FCEACB69-DF09-5941-A8BD-1127B8BD73CC
+====================
+        
+ERROR 2024-12-20 15:14:26,584 decorators 10254 6244724736 View error: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django_redis/cache.py", line 81, in set
+    return self.client.set(*args, **kwargs)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django_redis/client/default.py", line 185, in set
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/decorators.py", line 13, in wrapper
+    return view_func(*args, **kwargs)
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 110, in post
+    cache.set(cache_key, code, timeout=Limits.SMS_CODE_EXPIRE_MINUTES * 60)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django_redis/client/default.py", line 175, in set
+    return bool(client.set(nkey, nvalue, nx=nx, px=timeout, xx=xx))
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/redis/commands/core.py", line 2335, in set
+    return self.execute_command("SET", *pieces, **options)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/redis/connection.py", line 1422, in get_connection
+    connection.connect()
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/redis/connection.py", line 363, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2024-12-20 15:14:26,585 log 10254 6244724736 Internal Server Error: /api/users/sms/code/
+INFO 2024-12-20 15:15:19,687 autoreload 10254 8426862656 /Users/liuzhao/Documents/Projects/popowork/config/settings.py changed, reloading.
+INFO 2024-12-20 15:15:20,210 autoreload 10979 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 15:15:26,575 utils 10979 6134968320 
+=== 短信发送请求参数 ===
+手机号: 15021564464
+验证码: 644962
+场景: change_phone
+签名: 上海未智网络科技
+模板ID: SMS_476500294
+====================
+        
+INFO 2024-12-20 15:15:26,575 utils 10979 6134968320 正在发送短信...
+INFO 2024-12-20 15:15:26,832 utils 10979 6134968320 
+=== 短信发送响应信息 ===
+响应代码: OK
+响应消息: OK
+请求ID: 31375FBF-CC59-5FF4-BA78-45460241A851
+====================
+        
+ERROR 2024-12-20 15:15:26,841 decorators 10979 6134968320 View error: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django_redis/cache.py", line 29, in _decorator
+    return method(self, *args, **kwargs)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django_redis/cache.py", line 81, in set
+    return self.client.set(*args, **kwargs)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django_redis/client/default.py", line 185, in set
+    raise ConnectionInterrupted(connection=client) from e
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/liuzhao/Documents/Projects/popowork/users/decorators.py", line 13, in wrapper
+    return view_func(*args, **kwargs)
+  File "/Users/liuzhao/Documents/Projects/popowork/users/views.py", line 110, in post
+    cache.set(cache_key, code, timeout=Limits.SMS_CODE_EXPIRE_MINUTES * 60)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django_redis/cache.py", line 36, in _decorator
+    raise e.__cause__
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django_redis/client/default.py", line 175, in set
+    return bool(client.set(nkey, nvalue, nx=nx, px=timeout, xx=xx))
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/redis/commands/core.py", line 2335, in set
+    return self.execute_command("SET", *pieces, **options)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/redis/client.py", line 559, in execute_command
+    return self._execute_command(*args, **options)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/redis/client.py", line 565, in _execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/redis/connection.py", line 1422, in get_connection
+    connection.connect()
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/redis/connection.py", line 363, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR 2024-12-20 15:15:26,854 log 10979 6134968320 Internal Server Error: /api/users/sms/code/
+INFO 2024-12-20 15:16:51,596 autoreload 10979 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 15:16:51,969 autoreload 11032 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 15:18:33,851 autoreload 11032 8426862656 /Users/liuzhao/Documents/Projects/popowork/config/settings.py changed, reloading.
+INFO 2024-12-20 15:18:34,217 autoreload 11085 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 15:18:52,150 autoreload 11085 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/urls.py changed, reloading.
+INFO 2024-12-20 15:18:52,469 autoreload 11116 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 15:19:32,961 autoreload 11116 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/urls.py changed, reloading.
+INFO 2024-12-20 15:19:33,316 autoreload 11152 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 15:19:47,995 autoreload 11152 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/urls.py changed, reloading.
+INFO 2024-12-20 15:19:48,299 autoreload 11183 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 15:19:59,888 utils 11183 6217134080 
+=== 短信发送请求参数 ===
+手机号: 19279896869
+验证码: 061085
+场景: change_phone
+签名: 上海未智网络科技
+模板ID: SMS_476500294
+====================
+        
+INFO 2024-12-20 15:19:59,890 utils 11183 6217134080 正在发送短信...
+INFO 2024-12-20 15:20:00,657 utils 11183 6217134080 
+=== 短信发送响应信息 ===
+响应代码: OK
+响应消息: OK
+请求ID: 0FACFE03-E8D3-570F-8C2B-7327EF1342A4
+====================
+        
+WARNING 2024-12-20 15:20:31,105 log 11183 6217134080 Bad Request: /api/users/login/password/
+WARNING 2024-12-20 15:21:14,475 log 11183 6200307712 Bad Request: /api/users/change-password/
+WARNING 2024-12-20 15:21:20,988 log 11183 6200307712 Bad Request: /api/users/change-password/
+WARNING 2024-12-20 15:21:30,775 log 11183 6200307712 Bad Request: /api/users/change-password/
+INFO 2024-12-20 15:22:41,766 utils 11183 6217134080 
+=== 短信发送请求参数 ===
+手机号: 19279896869
+验证码: 555026
+场景: reset_password
+签名: 上海未智网络科技
+模板ID: SMS_476275121
+====================
+        
+INFO 2024-12-20 15:22:41,767 utils 11183 6217134080 正在发送短信...
+INFO 2024-12-20 15:22:42,030 utils 11183 6217134080 
+=== 短信发送响应信息 ===
+响应代码: OK
+响应消息: OK
+请求ID: 5B6E6FC3-7D4B-5C2F-89D2-C36956821FD6
+====================
+        
+WARNING 2024-12-20 15:23:12,404 log 11183 6217134080 Bad Request: /api/users/login/password/
+WARNING 2024-12-20 15:23:42,761 log 11183 6200307712 Bad Request: /api/users/change-password/
+WARNING 2024-12-20 15:24:06,047 log 11183 6217134080 Bad Request: /api/users/login/password/
+WARNING 2024-12-20 15:24:28,676 log 11183 6200307712 Bad Request: /api/users/change-password/
+WARNING 2024-12-20 15:25:18,554 log 11183 6233960448 Unauthorized: /api/users/change-password/
+WARNING 2024-12-20 15:25:27,541 log 11183 6233960448 Not Found: /api/users/login/password/
+WARNING 2024-12-20 15:26:01,167 log 11183 6233960448 Bad Request: /api/users/change-password/
+INFO 2024-12-20 15:28:24,057 autoreload 11183 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 15:28:24,452 autoreload 11379 8426862656 Watching for file changes with StatReloader
+WARNING 2024-12-20 15:32:03,148 log 11379 6201470976 Bad Request: /api/users/change-password/
+WARNING 2024-12-20 15:32:24,074 log 11379 6201470976 Bad Request: /api/users/change-password/
+WARNING 2024-12-20 15:33:02,681 log 11379 6218297344 Bad Request: /api/users/change-password/
+INFO 2024-12-20 15:37:24,763 autoreload 11379 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 15:37:25,153 autoreload 11693 8426862656 Watching for file changes with StatReloader
+WARNING 2024-12-20 15:37:29,835 log 11693 6163542016 Bad Request: /api/users/change-password/
+INFO 2024-12-20 15:39:44,362 autoreload 11693 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 15:39:44,709 autoreload 11739 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 15:42:06,259 autoreload 11739 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 15:42:06,626 autoreload 11816 8426862656 Watching for file changes with StatReloader
+WARNING 2024-12-20 15:42:14,493 log 11816 6165508096 Bad Request: /api/users/change-password/
+WARNING 2024-12-20 15:43:57,046 log 11816 6182334464 Bad Request: /api/users/change-password/
+INFO 2024-12-20 15:48:12,339 autoreload 11816 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 15:48:13,154 autoreload 11885 8426862656 Watching for file changes with StatReloader
+WARNING 2024-12-20 15:48:37,813 log 11885 6122893312 Bad Request: /api/users/change-password/
+WARNING 2024-12-20 15:49:01,045 log 11885 6122893312 Bad Request: /api/users/change-password/
+INFO 2024-12-20 15:49:19,866 autoreload 11939 8426862656 Watching for file changes with StatReloader
+WARNING 2024-12-20 15:49:23,489 log 11939 6190231552 Bad Request: /api/users/change-password/
+INFO 2024-12-20 15:50:43,250 autoreload 11939 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 15:50:43,614 autoreload 11977 8426862656 Watching for file changes with StatReloader
+WARNING 2024-12-20 15:50:48,227 log 11977 6156578816 Bad Request: /api/users/change-password/
+INFO 2024-12-20 15:53:22,859 utils 11977 6173405184 
+=== 短信发送请求参数 ===
+手机号: 19279896869
+验证码: 023719
+场景: register
+签名: 上海未智网络科技
+模板ID: SMS_476545109
+====================
+        
+INFO 2024-12-20 15:53:22,863 utils 11977 6173405184 正在发送短信...
+INFO 2024-12-20 15:53:23,259 utils 11977 6173405184 
+=== 短信发送响应信息 ===
+响应代码: OK
+响应消息: OK
+请求ID: FAA97C99-8B53-5C61-805D-5730847C2E2D
+====================
+        
+WARNING 2024-12-20 15:53:54,497 log 11977 6173405184 Bad Request: /api/users/register/
+INFO 2024-12-20 16:00:23,571 autoreload 11977 8426862656 /Users/liuzhao/Documents/Projects/popowork/config/settings.py changed, reloading.
+INFO 2024-12-20 16:00:23,940 autoreload 12134 8426862656 Watching for file changes with StatReloader
+WARNING 2024-12-20 16:00:49,649 log 12134 6200504320 Bad Request: /api/users/register/
+INFO 2024-12-20 16:00:59,801 autoreload 12173 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 16:01:33,312 autoreload 12173 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 16:01:33,677 autoreload 12213 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 16:05:00,963 autoreload 12213 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 16:05:01,322 autoreload 12308 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 16:05:34,814 autoreload 12308 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 16:05:35,130 autoreload 12326 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 16:05:46,698 autoreload 12326 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 16:05:47,031 autoreload 12339 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 16:07:24,757 autoreload 12339 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 16:07:26,124 autoreload 12373 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 16:09:35,639 autoreload 12373 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 16:09:36,007 autoreload 12460 8426862656 Watching for file changes with StatReloader
+WARNING 2024-12-20 16:09:40,671 log 12460 6124187648 Unauthorized: /api/users/change-password/
+WARNING 2024-12-20 16:09:51,790 log 12460 6141014016 Bad Request: /api/users/sms/code/
+INFO 2024-12-20 16:09:58,856 utils 12460 6141014016 
+=== 短信发送请求参数 ===
+手机号: 15021564464
+验证码: 290650
+场景: register
+签名: 上海未智网络科技
+模板ID: SMS_476545109
+====================
+        
+INFO 2024-12-20 16:09:58,856 utils 12460 6141014016 正在发送短信...
+INFO 2024-12-20 16:09:59,344 utils 12460 6141014016 
+=== 短信发送响应信息 ===
+响应代码: OK
+响应消息: OK
+请求ID: 83FD1CCF-08D1-5139-8800-51FD0C49A8BB
+====================
+        
+WARNING 2024-12-20 16:10:20,465 log 12460 6141014016 Bad Request: /api/users/register/
+INFO 2024-12-20 16:12:29,188 autoreload 12460 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 16:12:29,857 autoreload 12502 8426862656 Watching for file changes with StatReloader
+WARNING 2024-12-20 16:12:33,143 log 12502 6161281024 Bad Request: /api/users/register/
+INFO 2024-12-20 16:13:40,779 autoreload 12502 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 16:13:41,145 autoreload 12539 8426862656 Watching for file changes with StatReloader
+WARNING 2024-12-20 16:13:48,280 log 12539 6132510720 Bad Request: /api/users/register/
+WARNING 2024-12-20 16:13:53,676 log 12539 6132510720 Bad Request: /api/users/sms/code/
+INFO 2024-12-20 16:15:56,428 autoreload 12539 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 16:15:56,813 autoreload 12720 8426862656 Watching for file changes with StatReloader
+WARNING 2024-12-20 16:15:59,959 log 12720 6198865920 Bad Request: /api/users/sms/code/
+INFO 2024-12-20 16:16:08,447 autoreload 12755 8426862656 Watching for file changes with StatReloader
+WARNING 2024-12-20 16:16:14,715 log 12755 6187724800 Bad Request: /api/users/sms/code/
+INFO 2024-12-20 16:19:21,094 autoreload 12755 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 16:19:21,460 autoreload 12806 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 16:19:29,107 views 12806 6159347712 Request data: {'phone': '15021564464', 'scene': 'register'}
+INFO 2024-12-20 16:19:29,107 views 12806 6159347712 Request content type: application/json
+INFO 2024-12-20 16:19:29,108 views 12806 6159347712 Request headers: {'Content-Length': '42', 'Content-Type': 'application/json', 'Host': '192.168.3.16:8000', 'Connection': 'keep-alive', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'Accept': 'application/json, text/plain, */*', 'Origin': 'http://popo.work', 'Referer': 'http://popo.work/', 'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'}
+INFO 2024-12-20 16:19:29,108 views 12806 6159347712 Parsed data - phone: 15021564464, scene: register, login_mode: None
+WARNING 2024-12-20 16:19:29,116 log 12806 6159347712 Bad Request: /api/users/sms/code/
+INFO 2024-12-20 16:20:02,725 views 12806 6159347712 Request data: {'phone': '15021564464', 'scene': 'register'}
+INFO 2024-12-20 16:20:02,726 views 12806 6159347712 Request content type: application/json
+INFO 2024-12-20 16:20:02,727 views 12806 6159347712 Request headers: {'Content-Length': '42', 'Content-Type': 'application/json', 'Host': '192.168.3.16:8000', 'Connection': 'keep-alive', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'Accept': 'application/json, text/plain, */*', 'Origin': 'http://popo.work', 'Referer': 'http://popo.work/', 'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'}
+INFO 2024-12-20 16:20:02,727 views 12806 6159347712 Parsed data - phone: 15021564464, scene: register, login_mode: None
+WARNING 2024-12-20 16:20:02,737 log 12806 6159347712 Bad Request: /api/users/sms/code/
+INFO 2024-12-20 16:23:55,137 autoreload 12806 8426862656 /Users/liuzhao/Documents/Projects/popowork/config/settings.py changed, reloading.
+INFO 2024-12-20 16:23:55,531 autoreload 12970 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-20 16:24:12,582 views 12970 6171717632 Request data: {'phone': '15021564464', 'scene': 'register'}
+INFO 2024-12-20 16:24:12,583 views 12970 6171717632 Request content type: application/json
+INFO 2024-12-20 16:24:12,583 views 12970 6171717632 Request headers: {'Content-Length': '42', 'Content-Type': 'application/json', 'Host': '192.168.3.16:8000', 'Connection': 'keep-alive', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'Accept': 'application/json, text/plain, */*', 'Origin': 'http://popo.work', 'Referer': 'http://popo.work/', 'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'}
+INFO 2024-12-20 16:24:12,584 views 12970 6171717632 Parsed data - phone: 15021564464, scene: register, login_mode: None
+WARNING 2024-12-20 16:24:12,635 log 12970 6171717632 Bad Request: /api/users/sms/code/
+INFO 2024-12-20 16:24:18,461 views 12970 6188544000 Request data: {'phone': '15021564464', 'scene': 'register'}
+INFO 2024-12-20 16:24:18,462 views 12970 6188544000 Request content type: application/json
+INFO 2024-12-20 16:24:18,462 views 12970 6188544000 Request headers: {'Content-Length': '42', 'Content-Type': 'application/json', 'Host': '192.168.3.16:8000', 'Connection': 'keep-alive', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'Accept': 'application/json, text/plain, */*', 'Origin': 'http://popo.work', 'Referer': 'http://popo.work/', 'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'}
+INFO 2024-12-20 16:24:18,462 views 12970 6188544000 Parsed data - phone: 15021564464, scene: register, login_mode: None
+WARNING 2024-12-20 16:24:18,471 log 12970 6188544000 Bad Request: /api/users/sms/code/
+INFO 2024-12-20 16:24:56,704 views 12970 6171717632 Request data: {'phone': '13002175556', 'scene': 'register'}
+INFO 2024-12-20 16:24:56,705 views 12970 6171717632 Request content type: application/json
+INFO 2024-12-20 16:24:56,705 views 12970 6171717632 Request headers: {'Content-Length': '42', 'Content-Type': 'application/json', 'Host': '192.168.3.16:8000', 'Connection': 'keep-alive', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'Accept': 'application/json, text/plain, */*', 'Origin': 'http://popo.work', 'Referer': 'http://popo.work/', 'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'}
+INFO 2024-12-20 16:24:56,705 views 12970 6171717632 Parsed data - phone: 13002175556, scene: register, login_mode: None
+INFO 2024-12-20 16:24:56,715 utils 12970 6171717632 
+=== 短信发送请求参数 ===
+手机号: 13002175556
+验证码: 963045
+场景: register
+签名: 上海未智网络科技
+模板ID: SMS_476545109
+====================
+        
+INFO 2024-12-20 16:24:56,716 utils 12970 6171717632 正在发送短信...
+INFO 2024-12-20 16:24:57,018 utils 12970 6171717632 
+=== 短信发送响应信息 ===
+响应代码: OK
+响应消息: OK
+请求ID: 83BCF8DB-F01C-594E-9529-BB806BEF0B8A
+====================
+        
+WARNING 2024-12-20 16:27:00,855 log 12970 6171717632 Bad Request: /api/users/login/password/
+INFO 2024-12-20 16:27:49,203 views 12970 6171717632 Request data: {'phone': '15021564464', 'scene': 'register'}
+INFO 2024-12-20 16:27:49,204 views 12970 6171717632 Request content type: application/json
+INFO 2024-12-20 16:27:49,204 views 12970 6171717632 Request headers: {'Content-Length': '42', 'Content-Type': 'application/json', 'Host': '192.168.3.16:8000', 'Connection': 'keep-alive', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'Accept': 'application/json, text/plain, */*', 'Origin': 'http://popo.work', 'Referer': 'http://popo.work/', 'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'}
+INFO 2024-12-20 16:27:49,205 views 12970 6171717632 Parsed data - phone: 15021564464, scene: register, login_mode: None
+INFO 2024-12-20 16:27:49,222 utils 12970 6171717632 
+=== 短信发送请求参数 ===
+手机号: 15021564464
+验证码: 609139
+场景: register
+签名: 上海未智网络科技
+模板ID: SMS_476545109
+====================
+        
+INFO 2024-12-20 16:27:49,222 utils 12970 6171717632 正在发送短信...
+INFO 2024-12-20 16:27:49,539 utils 12970 6171717632 
+=== 短信发送响应信息 ===
+响应代码: OK
+响应消息: OK
+请求ID: 1662B188-5DFB-5B0B-95B5-93399B3A8791
+====================
+        
+INFO 2024-12-20 16:33:01,894 views 12970 6171717632 Request data: {'phone': '15021564464', 'scene': 'register'}
+INFO 2024-12-20 16:33:01,894 views 12970 6171717632 Request content type: application/json
+INFO 2024-12-20 16:33:01,895 views 12970 6171717632 Request headers: {'Content-Length': '42', 'Content-Type': 'application/json', 'Host': '192.168.3.16:8000', 'Connection': 'keep-alive', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36', 'Accept': 'application/json, text/plain, */*', 'Origin': 'http://popo.work', 'Referer': 'http://popo.work/', 'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7,zh-TW;q=0.6'}
+INFO 2024-12-20 16:33:01,895 views 12970 6171717632 Parsed data - phone: 15021564464, scene: register, login_mode: None
+WARNING 2024-12-20 16:33:01,899 log 12970 6171717632 Bad Request: /api/users/sms/code/
+INFO 2024-12-20 16:34:47,495 autoreload 12970 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-20 16:34:48,067 autoreload 13334 8426862656 Watching for file changes with StatReloader
+WARNING 2024-12-20 16:34:51,100 log 13334 6126907392 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 16:34:55,856 log 13334 6126907392 Bad Request: /api/users/sms/code/
+INFO 2024-12-20 16:37:38,521 autoreload 13473 8426862656 Watching for file changes with StatReloader
+WARNING 2024-12-20 16:37:50,116 log 13473 6169620480 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 16:37:53,082 log 13473 6169620480 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 16:38:01,810 log 13473 6169620480 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 16:39:46,893 log 13473 6169620480 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 16:39:57,206 log 13473 6169620480 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 16:40:56,006 log 13473 6169620480 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 16:41:28,447 log 13473 6169620480 Unauthorized: /api/users/profile/
+WARNING 2024-12-20 16:46:26,668 log 13473 6169620480 Unauthorized: /api/users/profile/
+WARNING 2024-12-20 16:55:05,231 log 13473 6169620480 Unauthorized: /api/users/profile/
+INFO 2024-12-20 16:56:23,214 utils 13473 6169620480 
+=== 短信发送请求参数 ===
+手机号: 15021564464
+验证码: 017954
+场景: register
+签名: 上海未智网络科技
+模板ID: SMS_476545109
+====================
+        
+INFO 2024-12-20 16:56:23,215 utils 13473 6169620480 正在发送短信...
+INFO 2024-12-20 16:56:23,591 utils 13473 6169620480 
+=== 短信发送响应信息 ===
+响应代码: OK
+响应消息: OK
+请求ID: 758718C4-E7E1-5E71-A1AB-74CBB26F3C6D
+====================
+        
+INFO 2024-12-20 16:57:05,321 utils 13473 6169620480 
+=== 短信发送请求参数 ===
+手机号: 19279896869
+验证码: 760480
+场景: change_phone
+签名: 上海未智网络科技
+模板ID: SMS_476500294
+====================
+        
+INFO 2024-12-20 16:57:05,322 utils 13473 6169620480 正在发送短信...
+INFO 2024-12-20 16:57:05,665 utils 13473 6169620480 
+=== 短信发送响应信息 ===
+响应代码: OK
+响应消息: OK
+请求ID: 851894FD-DB6B-55AC-8A4D-0139D800B542
+====================
+        
+WARNING 2024-12-20 16:57:20,840 log 13473 6169620480 Bad Request: /api/users/change-phone/
+WARNING 2024-12-20 16:58:07,707 log 13473 6169620480 Bad Request: /api/users/change-password/
+WARNING 2024-12-20 16:58:14,011 log 13473 6169620480 Bad Request: /api/users/change-password/
+WARNING 2024-12-20 17:09:01,365 log 13473 6169620480 Bad Request: /api/users/change-password/
+WARNING 2024-12-20 17:17:37,819 log 13473 6169620480 Bad Request: /api/users/change-password/
+WARNING 2024-12-20 18:15:49,180 log 13473 6169620480 Bad Request: /api/users/login/password/
+WARNING 2024-12-20 18:15:56,799 log 13473 6169620480 Bad Request: /api/users/login/password/
+WARNING 2024-12-20 18:28:13,218 log 13473 6186446848 Unauthorized: /api/users/profile/
+WARNING 2024-12-20 18:29:07,517 log 13473 6169620480 Unauthorized: /api/users/profile/
+WARNING 2024-12-20 18:31:42,327 log 13473 6169620480 Unauthorized: /api/users/profile/
+WARNING 2024-12-20 18:42:26,459 log 13473 6169620480 Unauthorized: /api/users/profile/
+WARNING 2024-12-20 18:42:26,475 log 13473 6169620480 Not Found: /api/users/token/refresh/
+WARNING 2024-12-20 18:42:39,374 log 13473 6169620480 Unauthorized: /api/users/profile/
+WARNING 2024-12-20 18:42:39,384 log 13473 6169620480 Not Found: /api/users/token/refresh/
+WARNING 2024-12-20 18:48:15,382 log 13473 6169620480 Unauthorized: /api/users/profile/
+WARNING 2024-12-20 18:48:15,390 log 13473 6169620480 Not Found: /api/users/token/refresh/
+WARNING 2024-12-20 19:35:59,310 log 13473 6169620480 Bad Request: /api/users/login/password/
+WARNING 2024-12-20 20:06:44,712 log 13473 6169620480 Unauthorized: /api/users/profile/
+WARNING 2024-12-20 20:06:48,184 log 13473 6169620480 Unauthorized: /api/users/profile/
+WARNING 2024-12-20 20:07:05,183 log 13473 6169620480 Unauthorized: /api/users/profile/
+WARNING 2024-12-20 20:07:12,272 log 13473 6169620480 Unauthorized: /api/users/profile/
+WARNING 2024-12-20 20:08:46,963 log 13473 6169620480 Unauthorized: /api/users/profile/
+WARNING 2024-12-20 20:18:04,903 log 13473 6186446848 Bad Request: /api/users/delete-account/
+WARNING 2024-12-20 20:18:24,288 log 13473 6169620480 Not Found: /api/users/login/password/
+WARNING 2024-12-20 20:18:28,308 log 13473 6169620480 Not Found: /api/users/login/password/
+WARNING 2024-12-20 20:18:58,980 log 13473 6169620480 Not Found: /api/users/login/password/
+WARNING 2024-12-20 20:19:44,759 log 13473 6169620480 Not Found: /api/users/login/password/
+WARNING 2024-12-20 20:19:56,476 log 13473 6169620480 Not Found: /api/users/login/password/
+WARNING 2024-12-20 20:20:36,331 log 13473 6169620480 Not Found: /api/users/login/password/
+WARNING 2024-12-20 20:20:45,796 log 13473 6186446848 Not Found: /api/users/sms/code/
+INFO 2024-12-20 20:20:55,183 utils 13473 6169620480 
+=== 短信发送请求参数 ===
+手机号: 15021564464
+验证码: 209855
+场景: register
+签名: 上海未智网络科技
+模板ID: SMS_476545109
+====================
+        
+INFO 2024-12-20 20:20:55,183 utils 13473 6169620480 正在发送短信...
+INFO 2024-12-20 20:20:55,633 utils 13473 6169620480 
+=== 短信发送响应信息 ===
+响应代码: OK
+响应消息: OK
+请求ID: A075E0AB-D026-524E-A623-EE529E3CC7DD
+====================
+        
+WARNING 2024-12-20 20:21:59,436 log 13473 6169620480 Bad Request: /api/users/register/
+WARNING 2024-12-20 20:28:39,786 log 13473 6169620480 Bad Request: /api/users/login/password/
+WARNING 2024-12-20 20:28:43,163 log 13473 6169620480 Bad Request: /api/users/login/password/
+WARNING 2024-12-20 20:29:47,797 log 13473 6169620480 Not Found: /api/users/login/password/
+WARNING 2024-12-20 20:29:53,678 log 13473 6169620480 Not Found: /api/users/sms/code/
+INFO 2024-12-20 20:29:57,872 utils 13473 6169620480 
+=== 短信发送请求参数 ===
+手机号: 15021564464
+验证码: 319284
+场景: register
+签名: 上海未智网络科技
+模板ID: SMS_476545109
+====================
+        
+INFO 2024-12-20 20:29:57,873 utils 13473 6169620480 正在发送短信...
+INFO 2024-12-20 20:29:58,251 utils 13473 6169620480 
+=== 短信发送响应信息 ===
+响应代码: OK
+响应消息: OK
+请求ID: 72F90AD8-8219-5BFA-BE44-15C7AD941AA9
+====================
+        
+WARNING 2024-12-20 20:30:28,676 log 13473 6169620480 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 20:31:32,757 log 13473 6169620480 Not Found: /api/users/login/password/
+INFO 2024-12-20 20:32:03,530 utils 13473 6169620480 
+=== 短信发送请求参数 ===
+手机号: 15021564464
+验证码: 516045
+场景: register
+签名: 上海未智网络科技
+模板ID: SMS_476545109
+====================
+        
+INFO 2024-12-20 20:32:03,531 utils 13473 6169620480 正在发送短信...
+INFO 2024-12-20 20:32:03,816 utils 13473 6169620480 
+=== 短信发送响应信息 ===
+响应代码: OK
+响应消息: OK
+请求ID: 18FC248F-BBE6-51AC-B960-39DB19FDC920
+====================
+        
+INFO 2024-12-20 20:36:05,389 utils 13473 6169620480 
+=== 短信发送请求参数 ===
+手机号: 15021564464
+验证码: 085899
+场景: change_phone
+签名: 上海未智网络科技
+模板ID: SMS_476500294
+====================
+        
+INFO 2024-12-20 20:36:05,390 utils 13473 6169620480 正在发送短信...
+INFO 2024-12-20 20:36:05,721 utils 13473 6169620480 
+=== 短信发送响应信息 ===
+响应代码: OK
+响应消息: OK
+请求ID: D8C6B143-D4AF-5DFF-9D62-B106B1311D80
+====================
+        
+WARNING 2024-12-20 20:37:50,012 log 13473 6169620480 Bad Request: /api/users/login/password/
+INFO 2024-12-20 20:49:07,650 utils 13473 6186446848 
+=== 短信发送请求参数 ===
+手机号: 15202192646
+验证码: 970938
+场景: register
+签名: 上海未智网络科技
+模板ID: SMS_476545109
+====================
+        
+INFO 2024-12-20 20:49:07,652 utils 13473 6186446848 正在发送短信...
+INFO 2024-12-20 20:49:07,968 utils 13473 6186446848 
+=== 短信发送响应信息 ===
+响应代码: OK
+响应消息: OK
+请求ID: 9D1948FF-47FD-5C85-9424-2DE9CBF9CB5B
+====================
+        
+WARNING 2024-12-20 20:49:58,746 log 13473 6186446848 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 20:50:05,564 log 13473 6186446848 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 20:50:09,917 log 13473 6220099584 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 20:50:12,110 log 13473 6186446848 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 20:50:21,021 log 13473 6186446848 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 20:50:24,492 log 13473 6186446848 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 20:50:28,515 log 13473 6186446848 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 20:50:43,178 log 13473 6186446848 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 20:50:46,417 log 13473 6186446848 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 20:53:46,519 log 13473 6169620480 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 20:53:50,736 log 13473 6169620480 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 20:53:59,274 log 13473 6169620480 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 20:54:00,210 log 13473 6169620480 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 20:54:07,870 log 13473 6169620480 Bad Request: /api/users/sms/code/
+INFO 2024-12-20 20:54:30,043 utils 13473 6203273216 
+=== 短信发送请求参数 ===
+手机号: 19279896869
+验证码: 357862
+场景: register
+签名: 上海未智网络科技
+模板ID: SMS_476545109
+====================
+        
+INFO 2024-12-20 20:54:30,043 utils 13473 6203273216 正在发送短信...
+INFO 2024-12-20 20:54:30,408 utils 13473 6203273216 
+=== 短信发送响应信息 ===
+响应代码: OK
+响应消息: OK
+请求ID: 3605CBB9-6921-551D-AE44-F70077EF8C2B
+====================
+        
+WARNING 2024-12-20 20:54:39,657 log 13473 6169620480 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 20:55:28,752 log 13473 6169620480 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 20:56:40,354 log 13473 6186446848 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 21:15:00,447 log 13473 6169620480 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 21:15:09,161 log 13473 6169620480 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 21:15:12,366 log 13473 6169620480 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 21:23:43,928 log 13473 6169620480 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 21:23:56,544 log 13473 6169620480 Bad Request: /api/users/sms/code/
+WARNING 2024-12-20 21:24:19,533 log 13473 6169620480 Bad Request: /api/users/delete-account/
+INFO 2024-12-20 21:24:37,893 utils 13473 6169620480 
+=== 短信发送请求参数 ===
+手机号: 15021564464
+验证码: 858429
+场景: register
+签名: 上海未智网络科技
+模板ID: SMS_476545109
+====================
+        
+INFO 2024-12-20 21:24:37,894 utils 13473 6169620480 正在发送短信...
+INFO 2024-12-20 21:24:38,346 utils 13473 6169620480 
+=== 短信发送响应信息 ===
+响应代码: OK
+响应消息: OK
+请求ID: 07344C6B-459E-53F9-93DB-7FC484550598
+====================
+        
+WARNING 2024-12-20 21:25:00,538 log 13473 6169620480 Bad Request: /api/users/register/
+WARNING 2024-12-20 22:30:12,518 log 13473 6169620480 Not Found: /api/users/login/password/
+WARNING 2024-12-21 09:13:35,722 log 13473 6169620480 Unauthorized: /api/token/refresh/
+WARNING 2024-12-21 11:15:37,494 log 13473 6186446848 Unauthorized: /api/token/refresh/
+WARNING 2024-12-21 11:38:48,881 log 13473 6236925952 Unauthorized: /api/token/refresh/
+WARNING 2024-12-21 13:25:29,077 log 13473 6220099584 Unauthorized: /api/token/refresh/
+WARNING 2024-12-21 14:20:56,547 log 13473 6186446848 Unauthorized: /api/token/refresh/
+WARNING 2024-12-21 14:45:15,484 log 13473 6186446848 Bad Request: /api/users/login/password/
+WARNING 2024-12-21 16:13:26,999 log 13473 6236925952 Not Found: /api/users/login/password/
+INFO 2024-12-21 16:13:38,088 utils 13473 6236925952 
+=== 短信发送请求参数 ===
+手机号: 19279896869
+验证码: 829636
+场景: register
+签名: 上海未智网络科技
+模板ID: SMS_476545109
+====================
+        
+INFO 2024-12-21 16:13:38,089 utils 13473 6236925952 正在发送短信...
+INFO 2024-12-21 16:13:38,565 utils 13473 6236925952 
+=== 短信发送响应信息 ===
+响应代码: OK
+响应消息: OK
+请求ID: 46E64014-D495-5B3F-B034-31181F5F1CD0
+====================
+        
+WARNING 2024-12-21 16:55:53,419 log 13473 6186446848 Unauthorized: /api/token/blacklist/
+WARNING 2024-12-21 17:34:58,707 log 13473 6186446848 Unauthorized: /api/token/refresh/
+WARNING 2024-12-21 18:17:12,353 log 13473 6220099584 Unauthorized: /api/token/refresh/
+WARNING 2024-12-21 20:36:27,510 log 13473 6186446848 Unauthorized: /api/token/refresh/
+WARNING 2024-12-21 20:36:52,494 log 13473 6186446848 Bad Request: /api/users/login/password/
+WARNING 2024-12-21 21:40:52,973 log 13473 6203273216 Unauthorized: /api/token/refresh/
+WARNING 2024-12-21 21:40:52,973 log 13473 6220099584 Unauthorized: /api/token/refresh/
+WARNING 2024-12-21 22:37:46,901 log 13473 6186446848 Unauthorized: /api/token/refresh/
+WARNING 2024-12-22 07:21:51,920 log 13473 6203273216 Unauthorized: /api/token/refresh/
+WARNING 2024-12-22 08:32:08,826 log 13473 6236925952 Unauthorized: /api/token/refresh/
+INFO 2024-12-22 08:49:12,257 autoreload 72622 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-22 08:53:19,180 autoreload 72622 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/views.py changed, reloading.
+INFO 2024-12-22 08:53:19,541 autoreload 72695 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-22 08:54:19,625 autoreload 72695 8426862656 /Users/liuzhao/Documents/Projects/popowork/users/urls.py changed, reloading.
+INFO 2024-12-22 08:54:19,991 autoreload 72723 8426862656 Watching for file changes with StatReloader
+WARNING 2024-12-22 08:57:37,979 log 72723 6156201984 Unauthorized: /api/users/logout/
+INFO 2024-12-22 09:06:14,541 autoreload 72924 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-22 09:09:31,788 autoreload 72999 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-22 09:13:22,493 autoreload 73373 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-22 09:14:55,541 autoreload 73373 8426862656 /Users/liuzhao/Documents/Projects/popowork/config/settings.py changed, reloading.
+INFO 2024-12-22 09:14:55,954 autoreload 73398 8426862656 Watching for file changes with StatReloader
+INFO 2024-12-22 09:16:59,040 autoreload 73398 8426862656 /Users/liuzhao/Documents/Projects/popowork/config/settings.py changed, reloading.

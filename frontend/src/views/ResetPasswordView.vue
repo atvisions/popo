@@ -153,7 +153,8 @@ import HeadView from '@/components/HeadView.vue'
 import { showToast } from '@/components/ToastMessage.js'
 import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
-import axios from 'axios'
+import { resetPassword, sendSmsCode } from '@/api/user'  // 导入 API 方法
+import { SMS_SCENE } from '@/store'
 
 const router = useRouter()
 const phone = ref('')
@@ -164,7 +165,7 @@ const showPassword = ref(false)
 const loading = ref(false)
 const countdown = ref(0)
 
-// 表单验证
+// 表单验证相关代码保持不变...
 const isFormValid = computed(() => {
   return phone.value && 
          code.value && 
@@ -175,7 +176,7 @@ const isFormValid = computed(() => {
          /^1[3-9]\d{9}$/.test(phone.value)
 })
 
-// 验证手机号
+// 验证函数保持不变...
 const validatePhone = () => {
   const phoneRegex = /^1[3-9]\d{9}$/
   if (!phone.value) {
@@ -189,7 +190,6 @@ const validatePhone = () => {
   return true
 }
 
-// 验证密码
 const validatePassword = () => {
   if (!password.value) {
     showToast('请输入新密码', 'warning')
@@ -202,7 +202,6 @@ const validatePassword = () => {
   return true
 }
 
-// 验证确认密码
 const validateConfirmPassword = () => {
   if (!confirmPassword.value) {
     showToast('请确认密码', 'warning')
@@ -221,9 +220,9 @@ const handleSendCode = async () => {
   
   try {
     loading.value = true
-    await axios.post('/api/users/sms/code/', {
+    await sendSmsCode({  // 使用 API 方法
       phone: phone.value,
-      scene: 'reset_password'
+      scene: SMS_SCENE.RESET_PASSWORD
     })
     
     showToast('验证码已发送', 'success')
@@ -269,7 +268,7 @@ const handleResetPassword = async () => {
 
   try {
     loading.value = true
-    await axios.post('/api/users/reset-password/', {
+    await resetPassword({  // 使用 API 方法
       phone: phone.value,
       code: code.value,
       new_password: password.value,
@@ -296,4 +295,4 @@ const handleResetPassword = async () => {
 const togglePassword = () => {
   showPassword.value = !showPassword.value
 }
-</script> 
+</script>

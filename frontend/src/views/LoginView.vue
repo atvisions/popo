@@ -1,6 +1,6 @@
 <template>
   <HeadView />
-  <div class="min-h-screen bg-gray-50 pt-14">
+  <div class="min-h-screen pt-14">
     <!-- Logo 部分 -->
     <div class="sm:mx-auto sm:w-full sm:max-w-md pt-8">
       <h2 class="mt-6 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">登录账号</h2>
@@ -17,6 +17,7 @@
                 type="tel" 
                 id="phone" 
                 v-model="phone"
+                @input="handlePhoneInput"
                 required
                 class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 px-3"
                 :class="{'ring-red-300': phoneError}"
@@ -33,6 +34,7 @@
                 :type="showPassword ? 'text' : 'password'"
                 id="password"
                 v-model="password"
+                @input="handlePasswordInput"
                 required
                 class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 px-3 pr-10"
                 :class="{'ring-red-300': passwordError}"
@@ -102,12 +104,16 @@
 
           <div class="mt-6 grid grid-cols-3 gap-3">
             <div>
-              <a href="#" class="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+              <button
+                @click="handleWeChatClick" 
+                class="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
+              >
                 <span class="sr-only">微信登录</span>
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 0 1 .213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 0 0 .167-.054l1.903-1.114a.864.864 0 0 1 .717-.098 10.16 10.16 0 0 0 2.837.403c.276 0 .543-.027.81-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.595-6.348z"/>
+                <svg class="w-5 h-5 text-green-600" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8.667 15.273c-.328 0-.593-.265-.593-.593v-1.778a.592.592 0 0 1 1.186 0v1.778c0 .328-.265.593-.593.593zm6.666 0c-.328 0-.593-.265-.593-.593v-1.778a.592.592 0 0 1 1.186 0v1.778c0 .328-.265.593-.593.593z"/>
+                  <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm5.918 12.08c-.533 2.923-3.982 5.012-7.918 4.37-2.718-.444-4.963-2.165-5.735-4.37-.844-2.413.437-4.693 2.735-5.912.842-.446 1.777-.724 2.735-.832.437-.049.877-.073 1.318-.073 1.683 0 3.23.446 4.503 1.208 1.41.841 2.333 2.083 2.432 3.49.05.706-.095 1.406-.432 2.032-.535.99-1.563 1.756-2.9 2.165-1.096.336-2.245.361-3.368.073-.89-.227-1.683-.631-2.333-1.208-.437-.384-.706-.841-.816-1.333-.073-.336.024-.681.267-.927.242-.242.583-.339.915-.266.339.073.63.291.78.582.145.29.436.532.824.678.63.242 1.37.266 2.023.073.824-.242 1.37-.752 1.37-1.284 0-.532-.533-1.018-1.37-1.26-.63-.193-1.37-.169-2.023.073-.388.146-.679.388-.824.679-.145.29-.436.508-.78.581-.332.073-.673-.024-.915-.266-.243-.242-.34-.587-.267-.923.11-.492.379-.95.816-1.333.65-.577 1.443-.981 2.333-1.208 1.123-.288 2.272-.263 3.368.073 1.337.409 2.365 1.175 2.9 2.165.337.626.482 1.326.432 2.032-.099 1.407-1.022 2.649-2.432 3.49-1.273.762-2.82 1.208-4.503 1.208-.441 0-.881-.024-1.318-.073-.958-.108-1.893-.386-2.735-.832-2.298-1.219-3.579-3.499-2.735-5.912.772-2.205 3.017-3.926 5.735-4.37 3.936-.642 7.385 1.447 7.918 4.37z"/>
                 </svg>
-              </a>
+              </button>
             </div>
 
             <div>
@@ -132,95 +138,164 @@
       </div>
     </div>
   </div>
+  <WeChatLoginModal 
+  :visible="showWeChatLogin"
+  @close="handleWeChatClose" 
+  @login-success="handleWeChatLoginSuccess"
+/>
 </template>
 
 <script setup>
+import { ref, computed, onMounted } from 'vue'
+import { useRouter } from 'vue-router'
+import { useStore } from 'vuex'
 import HeadView from '@/components/HeadView.vue'
 import { showToast } from '@/components/ToastMessage'
-import { ref, computed } from 'vue'
-import { useRouter } from 'vue-router'
-import axios from 'axios'
+
 
 const router = useRouter()
+const store = useStore()
+
+// 表单数据
 const phone = ref('')
 const password = ref('')
 const loading = ref(false)
 const rememberMe = ref(false)
 const showPassword = ref(false)
+const phoneError = ref('')
+const passwordError = ref('')
+const showWeChatLogin = ref(false)
 
 // 表单验证状态
 const isFormValid = computed(() => {
-    return phone.value && password.value && !loading.value
+  return phone.value && password.value && !loading.value && !phoneError.value && !passwordError.value
 })
 
 // 手机号验证
 const validatePhone = () => {
-    const phoneRegex = /^1[3-9]\d{9}$/
-    if (!phone.value) {
-        showToast('请输入手机号', 'warning')
-        return false
-    }
-    if (!phoneRegex.test(phone.value)) {
-        showToast('请输入正确的手机号', 'warning')
-        return false
-    }
-    return true
+  phoneError.value = ''
+  const phoneRegex = /^1[3-9]\d{9}$/
+  if (!phone.value) {
+    phoneError.value = '请输入手机号'
+    return false
+  }
+  if (!phoneRegex.test(phone.value)) {
+    phoneError.value = '请输入正确的手机号'
+    return false
+  }
+  return true
 }
 
 // 密码验证
 const validatePassword = () => {
-    if (!password.value) {
-        showToast('请输入密码', 'warning')
-        return false
-    }
-    if (password.value.length < 6) {
-        showToast('密码长度不能少于6位', 'warning')
-        return false
-    }
-    return true
+  passwordError.value = ''
+  if (!password.value) {
+    passwordError.value = '请输入密码'
+    return false
+  }
+  if (password.value.length < 6) {
+    passwordError.value = '密码长度不能少于6位'
+    return false
+  }
+  return true
 }
 
-// 登录处理
-const handleLogin = async () => {
-    if (!validatePhone() || !validatePassword()) return
+// 表单验证
+const validatePasswordForm = () => {
+  const isPhoneValid = validatePhone()
+  const isPasswordValid = validatePassword()
+  return isPhoneValid && isPasswordValid
+}
 
-    try {
-        loading.value = true
-        const response = await axios.post('/api/users/login/password/', {
-            phone: phone.value,
-            password: password.value
-        })
+// 处理登录成功
+const handleLoginSuccess = () => {
+  showToast('登录成功', 'success')
+  const redirect = router.currentRoute.value.query.redirect || '/'
+  router.push(redirect)
+}
 
-        if (response.data.code === 200) {
-            // 从响应中获取数据
-            const { tokens, user } = response.data.data
-            
-            // 保存登录信息
-            localStorage.setItem('access_token', tokens.access)
-            localStorage.setItem('refresh_token', tokens.refresh)
-            localStorage.setItem('user_phone', user.phone)
-            localStorage.setItem('user_id', user.id)
+// 处理登录
+const handleLogin = async (e) => {
+  e.preventDefault()
+  if (!validatePasswordForm()) return
 
-            // 提示并跳转
-            showToast(response.data.message || '登录成功！', 'success')
-            router.push('/')
-        }
+  try {
+    loading.value = true
+    await store.dispatch('loginWithPassword', {
+      credentials: {
+        phone: phone.value,
+        password: password.value
+      },
+      remember: rememberMe.value
+    })
+
+    // 登录成功后处理
+    handleLoginSuccess()
     } catch (error) {
-        console.error('登录错误:', error)
-        if (error.response?.data) {
-            const errorData = error.response.data
-            const errorMessage = errorData.message || '登录失败，请重试'
-            showToast(errorMessage, 'error')
-        } else {
-            showToast('登录失败，请重试', 'error')
-        }
+      handleLoginError(error)
     } finally {
-        loading.value = false
+      loading.value = false
     }
+  }
+
+// 处理登录错误
+const handleLoginError = (error) => {
+  
+  let errorMessage = '登录失败，请重试'
+  
+  if (error.response) {
+    switch (error.response.status) {
+      case 404:
+        errorMessage = '账号不存在'
+        break
+      case 400:
+        errorMessage = error.response.data?.message || '登录信息有误，请检查后重试'
+        break
+      case 401:
+        errorMessage = '手机号或密码错误'
+        break
+      case 429:
+        errorMessage = '登录请求过于频繁，请稍后再试'
+        break
+      case 500:
+        errorMessage = '服务器出现问题，请稍后再试'
+        break
+      default:
+        errorMessage = '登录失败，请稍后重试'
+    }
+  } else if (error.request) {
+    errorMessage = '网络连接失败，请检查网络后重试'
+  }
+
+  showToast(errorMessage, 'error')
 }
 
 // 切换密码显示
 const togglePassword = () => {
-    showPassword.value = !showPassword.value
+  showPassword.value = !showPassword.value
 }
+
+// 输入事件处理
+const handlePhoneInput = () => {
+  if (phoneError.value) {
+    validatePhone()
+  }
+}
+
+const handlePasswordInput = () => {
+  if (passwordError.value) {
+    validatePassword()
+  }
+}
+
+
+// 检查登录状态
+onMounted(async () => {
+  // 如果已登录且token未过期，直接跳转
+  const isAuthenticated = await store.dispatch('checkAuth')
+  if (isAuthenticated) {
+    const redirect = router.currentRoute.value.query.redirect || '/'
+    router.push(redirect)
+  }
+})
 </script>

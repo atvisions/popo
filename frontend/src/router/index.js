@@ -5,9 +5,11 @@ import RegisterView from '../views/RegisterView.vue'
 import ResetPasswordView from '../views/ResetPasswordView.vue'
 import ProView from '../views/ProView.vue'
 import FAQView from '../views/FAQView.vue'
-import CareerNewsView from '../views/CareerNewsView.vue'
+import ResourcesView from '../views/ResourcesView.vue'
 import ResumeTemplateView from '../views/ResumeTemplateView.vue'
-// 定义路由配置
+import UserCenter from '@/views/user/UserCenter.vue'
+import store from '../store'
+
 const routes = [
   {
     path: '/',
@@ -49,40 +51,59 @@ const routes = [
     component: FAQView,
   },
   {
-    path: '/news',
-    name: 'news',
-    component: CareerNewsView,
+    path: '/resources',
+    name: 'resources',
+    component: ResourcesView,
   },
   {
     path: '/templates',
     name: 'templates',
     component: ResumeTemplateView,
+  },
+  {
+    path: '/user',
+    name: 'UserCenter',
+    component: UserCenter,
+    meta: {
+      requiresAuth: true
+    }
   }
 ]
 
-// 创建路由实例
 const router = createRouter({
-  history: createWebHistory('/'),
+  history: createWebHistory(process.env.BASE_URL),
   routes
 })
 
-// 路由守卫
-router.beforeEach((to, from, next) => {
-  const token = localStorage.getItem('access_token')
-  
-  // 检查页面是否需要认证
-  const requiresAuth = to.matched.some(record => record.meta.requiresAuth)
-  // 检查页面是否是游客页面（登录、注册等）
-  const isGuestPage = to.matched.some(record => record.meta.guest)
-
-  if (requiresAuth && !token) {
-    // 需要认证但没有 token，重定向到登录页
-    next({ name: 'login' })
-  } else if (token && isGuestPage) {
-    // 已登录但访问游客页面，重定向到首页
-    next({ name: 'home' })
-  } else {
-    // 其他情况正常通过
+/// 路由守卫
+router.beforeEach(async (to, from, next) => {
+  // 检查是否需要认证
+  if (to.matched.some(record => record.meta.requiresAuth)) {
+    // 检查认证状态
+    const isAuthenticated = await store.dispatch('checkAuth')
+    
+    if (!isAuthenticated) {
+      // 未认证，跳转到登录页
+      next({
+        path: '/login',
+        query: { redirect: to.fullPath }
+      })
+    } else {
+      next()
+    }
+  } 
+  // 检查是否是游客专用页面（如登录页）
+  else if (to.matched.some(record => record.meta.requiresGuest)) {
+    const isAuthenticated = store.getters.isAuthenticated
+    
+    if (isAuthenticated) {
+      // 已登录用户不能访问游客页面
+      next({ path: '/' })
+    } else {
+      next()
+    }
+  } 
+  else {
     next()
   }
 })

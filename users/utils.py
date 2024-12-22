@@ -1,110 +1,69 @@
-# users/utils.py
 import random
+import string
+import json
 import logging
+from typing import Optional
 from django.conf import settings
-from alibabacloud_dysmsapi20170525.client import Client
-from alibabacloud_tea_openapi import models as open_api_models
-from alibabacloud_dysmsapi20170525 import models as dysmsapi_models
-from .constants import SmsScene, Limits, ResponseMessage
+from aliyunsdkcore.client import AcsClient
+from aliyunsdkcore.request import CommonRequest
 
-# 配置日志
-logger = logging.getLogger('sms')
+logger = logging.getLogger('users')
 
-def generate_code(length=Limits.SMS_CODE_LENGTH):
+def generate_code(length: int = 6) -> str:
     """
-    生成指定长度的数字验证码
+    生成数字验证码
     :param length: 验证码长度，默认6位
-    :return: 验证码字符串
+    :return: 数字验证码字符串
     """
-    return ''.join(random.choices('0123456789', k=length))
+    return ''.join(random.choices(string.digits, k=length))
 
-def get_sms_client():
+def send_sms(phone: str, code: str, scene: str) -> bool:
     """
-    获取阿里云短信客户端
-    :return: 阿里云短信客户端实例
-    """
-    try:
-        config = open_api_models.Config(
-            access_key_id=settings.ALIYUN_ACCESS_KEY_ID,
-            access_key_secret=settings.ALIYUN_ACCESS_KEY_SECRET
-        )
-        config.endpoint = 'dysmsapi.aliyuncs.com'
-        return Client(config)
-    except Exception as e:
-        logger.error(f"初始化短信客户端失败: {str(e)}")
-        raise
-
-def get_template_code(scene):
-    """
-    根据场景获取模板代码
-    :param scene: 场景类型
-    :return: 模板代码
-    """
-    template_mapping = {
-        SmsScene.REGISTER: settings.ALIYUN_SMS_TEMPLATE_CODE_REGISTER,
-        SmsScene.LOGIN: settings.ALIYUN_SMS_TEMPLATE_CODE_LOGIN,
-        SmsScene.RESET_PASSWORD: settings.ALIYUN_SMS_TEMPLATE_CODE_RESET_PASSWORD
-    }
-    return template_mapping.get(scene)
-
-def send_sms(phone, code, scene=SmsScene.REGISTER):
-    """
-    发送短信验证码
+    发送短信
     :param phone: 手机号
     :param code: 验证码
-    :param scene: 场景，默认为注册
-    :return: (bool, str) 发送结果和消息
+    :param scene: 场景
+    :return: 是否发送成功
     """
     try:
-        client = get_sms_client()
-        template_code = get_template_code(scene)
-        
-        if not template_code:
-            logger.error(f"未找到场景 {scene} 对应的模板")
-            return False, f"未找到场景 {scene} 对应的模板"
-            
-        # 记录请求参数
-        logger.info(f"""
-=== 短信发送请求参数 ===
-手机号: {phone}
-验证码: {code}
-场景: {scene}
-签名: {settings.ALIYUN_SMS_SIGN_NAME}
-模板ID: {template_code}
-====================
-        """)
-        
-        # 构建请求
-        request = dysmsapi_models.SendSmsRequest(
-            phone_numbers=phone,
-            sign_name=settings.ALIYUN_SMS_SIGN_NAME,
-            template_code=template_code,
-            template_param='{"code":"%s"}' % code
+        # 初始化 AcsClient
+        client = AcsClient(
+            settings.ALIYUN['ACCESS_KEY_ID'],
+            settings.ALIYUN['ACCESS_KEY_SECRET'],
+            'cn-hangzhou'
         )
-        
+
+        # 组装请求对象
+        request = CommonRequest()
+        request.set_accept_format('json')
+        request.set_domain('dysmsapi.aliyuncs.com')
+        request.set_method('POST')
+        request.set_protocol_type('https')
+        request.set_version('2017-05-25')
+        request.set_action_name('SendSms')
+
+        # 设置发送参数
+        request.add_query_param('PhoneNumbers', phone)
+        request.add_query_param('SignName', settings.ALIYUN['SMS_SIGN_NAME'])
+        request.add_query_param('TemplateCode', settings.ALIYUN['SMS_TEMPLATES'][scene])
+        request.add_query_param('TemplateParam', json.dumps({'code': code}))
+
         # 发送请求
-        logger.info("正在发送短信...")
-        response = client.send_sms(request)
-        
-        # 记录响应信息
-        logger.info(f"""
-=== 短信发送响应信息 ===
-响应代码: {response.body.code}
-响应消息: {response.body.message}
-请求ID: {response.body.request_id}
-====================
-        """)
-        
-        success = response.body.code == "OK"
+        response = client.do_action_with_exception(request)
+        result = json.loads(response)
+
+        # 检查发送结果
+        success = result.get('Code') == 'OK'
         if not success:
-            error_message = response.body.message
-            if "触发小时级流控" in error_message:
-                return False, ResponseMessage.SMS_RATE_LIMIT
-            logger.error(f"发送失败原因: {error_message}")
-            return False, error_message
-            
-        return True, ResponseMessage.SMS_SEND_SUCCESS
-        
+            logger.error(f"短信发送失败: {result}")
+            return False
+
+        logger.info(f"短信发送成功 -> 手机号: {phone}, 场景: {scene}")
+        return True
+
     except Exception as e:
-        logger.exception("短信发送异常")
-        return False, str(e)
+        logger.exception(f"发送短信异常: {str(e)}")
+        return False
+
+# 显式导出函数
+__all__ = ['generate_code', 'send_sms']

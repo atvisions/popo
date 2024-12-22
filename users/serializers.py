@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
 from django.core.cache import cache
+from .models import UserProfile
 
 User = get_user_model()
 
@@ -83,3 +84,22 @@ class CodeLoginSerializer(serializers.Serializer):
         
     def get_user(self):
         return self.user
+
+class UserProfileSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserProfile
+        fields = [
+            'name',
+            'nickname',
+            'avatar',
+            'gender',
+            'birthday',
+            'phone',
+            'email',
+            'location',
+            'profession',
+            'company',
+            'position',
+            'bio',
+            'wechat'
+        ]

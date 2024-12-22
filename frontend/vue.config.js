@@ -1,21 +1,39 @@
 const { defineConfig } = require('@vue/cli-service')
+const path = require('path')
+
 module.exports = defineConfig({
   transpileDependencies: true,
+  // 使用 defineProperty 而不是 define
   chainWebpack: config => {
+    config.plugin('define').tap(args => {
+      Object.assign(args[0], {
+        'import.meta.env.VITE_API_URL': JSON.stringify('http://192.168.3.16:8000')
+      })
+      return args
+    })
+    
+    // 设置页面标题
     config.plugin('html').tap(args => {
       args[0].title = 'popo.work'
       return args
     })
   },
+  configureWebpack: {
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, 'src')
+      }
+    }
+  },
   devServer: {
     proxy: {
       '/api': {
-        target: 'http://127.0.0.1:8000',  // 后端服务器地址
-        changeOrigin: true,  // 允许跨域
-        ws: true,  // 支持 websocket
-        // pathRewrite: {
-        //   '^/api': ''  // 如果后端没有/api前缀，可以把/api重写为空
-        // }
+        target: 'http://192.168.3.16:8000',
+        changeOrigin: true,
+        ws: true,
+        pathRewrite: {
+          '^/api': ''
+        }
       }
     }
   }

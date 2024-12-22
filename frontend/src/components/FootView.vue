@@ -1,5 +1,5 @@
 <template>
-    <footer class="bg-white">
+    <footer class="bg-white hidden lg:block">
         <div class="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
             <!-- 左侧链接 - 移动端居中 -->
             <div class="flex flex-col items-center md:items-start space-y-4 md:space-y-0 md:flex-row md:space-x-6">
