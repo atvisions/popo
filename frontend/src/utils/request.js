@@ -13,11 +13,30 @@ const BASE_CONFIG = {
 }
 
 // API 版本和路径配置
-const API_VERSION = 'v1'
 const API_PATHS = {
-  REFRESH_TOKEN: `/${API_VERSION}/auth/token/refresh/`,
-  AUTH_PREFIX: `/${API_VERSION}/auth/`,
-  USERS_PREFIX: `/${API_VERSION}/users/`
+  // 认证相关
+  AUTH: {
+    SEND_SMS: `/v1/auth/sms/send/`,
+    REGISTER: `/v1/auth/register/`,
+    PASSWORD_LOGIN: `/v1/auth/login/password/`,
+    CODE_LOGIN: `/v1/auth/login/code/`,
+    LOGOUT: `/v1/auth/logout/`,
+    RESET_PASSWORD: `/v1/auth/password/reset/`,
+    REFRESH_TOKEN: `/v1/auth/token/refresh/`,
+  },
+  
+  // 用户资料相关
+  USERS: {
+    PROFILE: '/v1/users/profile/',
+    AVATAR: '/v1/users/profile/avatar/'
+  },
+  
+  // 账户管理相关
+  ACCOUNT: {
+    CHANGE_PASSWORD: `/v1/users/account/password/`,
+    CHANGE_PHONE: `/v1/users/account/phone/`,
+    DELETE_ACCOUNT: `/v1/users/account/delete/`,
+  }
 }
 
 // 创建请求实例
@@ -28,12 +47,10 @@ const publicRequest = axios.create(BASE_CONFIG)
 let isRefreshing = false
 let refreshSubscribers = []
 
-// 添加刷新订阅
 const addRefreshSubscriber = (callback) => {
   refreshSubscribers.push(callback)
 }
 
-// 执行订阅回调
 const onRefreshed = (token) => {
   refreshSubscribers.forEach(callback => callback(token))
   refreshSubscribers = []
@@ -46,16 +63,6 @@ request.interceptors.request.use(
     if (token) {
       config.headers.Authorization = `Bearer ${token}`
     }
-    
-    // 调试日志
-    if (process.env.NODE_ENV === 'development') {
-      console.log('Request:', {
-        url: config.url,
-        method: config.method,
-        headers: config.headers
-      })
-    }
-    
     return config
   },
   error => {
@@ -63,28 +70,12 @@ request.interceptors.request.use(
     return Promise.reject(error)
   }
 )
-
 // 响应拦截器
 request.interceptors.response.use(
   response => {
-    if (process.env.NODE_ENV === 'development') {
-      console.log('Response:', {
-        url: response.config.url,
-        status: response.status,
-        data: response.data
-      })
-    }
     return response
   },
   async error => {
-    if (import.meta.env.DEV) {
-      console.error('Response Error:', {
-        url: error.config?.url,
-        status: error.response?.status,
-        data: error.response?.data
-      })
-    }
-
     const originalRequest = error.config
 
     // 处理黑名单错误
@@ -94,7 +85,7 @@ request.interceptors.response.use(
     }
 
     // 处理刷新token失败
-    if (originalRequest.url === API_PATHS.REFRESH_TOKEN) {
+    if (originalRequest.url === API_PATHS.AUTH.REFRESH_TOKEN) {
       await store.dispatch('handleTokenExpired')
       return Promise.reject(error)
     }
@@ -102,7 +93,6 @@ request.interceptors.response.use(
     // 处理401错误
     if (error.response?.status === 401 && !originalRequest._retry) {
       if (isRefreshing) {
-        // 等待token刷新完成
         return new Promise(resolve => {
           addRefreshSubscriber(token => {
             originalRequest.headers.Authorization = `Bearer ${token}`
@@ -117,11 +107,7 @@ request.interceptors.response.use(
       try {
         await store.dispatch('refreshToken')
         const newToken = store.getters.getAccessToken
-        
-        // 通知所有等待的请求
         onRefreshed(newToken)
-        
-        // 重试当前请求
         originalRequest.headers.Authorization = `Bearer ${newToken}`
         return request(originalRequest)
       } catch (refreshError) {
@@ -132,12 +118,11 @@ request.interceptors.response.use(
       }
     }
 
-    // 错误提示
     handleErrorMessage(error)
-
     return Promise.reject(error)
   }
 )
+
 
 // 公开请求的响应拦截器
 publicRequest.interceptors.response.use(
@@ -154,7 +139,6 @@ const handleErrorMessage = (error) => {
     const { message, detail, errors } = error.response.data
     
     if (errors) {
-      // 处理字段错误
       const errorMessages = Object.values(errors)
         .flat()
         .filter(msg => msg)
@@ -179,6 +163,5 @@ const handleErrorMessage = (error) => {
   }
 }
 
-// 导出 API 路径配置
 export { API_PATHS }
 export { request as default, publicRequest }

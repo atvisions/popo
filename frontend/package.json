@@ -8,10 +8,12 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
     "@headlessui/vue": "^1.7.23",
     "@heroicons/vue": "^2.2.0",
     "axios": "^1.7.9",
     "core-js": "^3.8.3",
+    "element-plus": "^2.9.1",
     "flowbite": "^2.5.2",
     "pinia": "^2.3.0",
     "pinia-plugin-persist": "^1.0.0",
@@ -35,6 +37,8 @@
     "postcss": "^8.4.49",
     "sass": "^1.32.7",
     "sass-loader": "^12.0.0",
-    "tailwindcss": "^3.4.16"
+    "tailwindcss": "^3.4.16",
+    "unplugin-auto-import": "^0.19.0",
+    "unplugin-vue-components": "^0.28.0"
   }
 }

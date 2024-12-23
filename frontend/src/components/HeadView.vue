@@ -15,9 +15,9 @@
         <template v-for="item in navigation.main" :key="item.name">
           <!-- 普通菜单项 -->
           <router-link v-if="!item.children" :to="item.href" :class="[
-            'text-sm font-semibold leading-6',
+            'text-base  leading-6',
             isCurrentRoute(item.href)
-              ? 'text-indigo-600'
+              ? 'text-indigo-600 font-semibold'
               : 'text-gray-900 hover:text-indigo-600'
           ]">
             {{ item.name }}
@@ -26,7 +26,7 @@
           <!-- 带下拉菜单的项 -->
           <div v-else class="relative resource-menu">
             <button @click.stop="resourceMenuOpen = !resourceMenuOpen"
-              class="flex items-center text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600">
+              class="flex items-center text-base leading-6 text-gray-900 hover:text-indigo-600">
               {{ item.name }}
               <svg class="h-5 w-5 ml-1" :class="{ 'rotate-180': resourceMenuOpen }" viewBox="0 0 20 20"
                 fill="currentColor">
@@ -37,66 +37,64 @@
             </button>
 
             <!-- 下拉菜单内容 -->
-            <div v-if="resourceMenuOpen"
-  class="absolute left-1/2 z-10 mt-3 w-screen max-w-7xl -translate-x-1/2"
-  style="position: fixed; top: 64px; left: 50%;">
-  <div class="bg-white shadow-lg ring-1 ring-gray-900/5">
-    <div class="grid grid-cols-4 gap-8 p-8">
-      <!-- 遍历主要分类 -->
-      <template v-for="category in getResourceCategories" :key="category.name">
-        <div>
-          <h3 class="text-base font-medium text-gray-900 mb-4">{{ category.name }}</h3>
-          <nav class="space-y-2">
-            <router-link v-for="item in category.children" :key="item.href" :to="item.href"
-              class="flex items-center space-x-3 px-2 py-2 hover:bg-gray-50 group">
-              <component :is="getIcon(item.icon)" 
-                class="flex-shrink-0 h-5 w-5 text-gray-400 group-hover:text-indigo-600" />
-              <div>
-                <span class="text-sm text-gray-900 group-hover:text-indigo-600">{{ item.name }}</span>
-                <p class="text-xs text-gray-500">{{ item.description }}</p>
-              </div>
-            </router-link>
-          </nav>
-          
-          <!-- 如果有推荐文章，显示在分类下方 -->
-          <div v-if="category.featured" class="mt-4 pt-4 border-t border-gray-100">
-            <h4 class="text-sm font-medium text-gray-900 mb-3">{{ category.featured.title }}</h4>
-            <div class="space-y-3">
-              <router-link v-for="article in category.featured.articles" 
-                :key="article.href" 
-                :to="article.href"
-                class="group block">
-                <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden mb-2">
-                  <img :src="article.image" :alt="article.title" 
-                    class="object-cover w-full h-full group-hover:opacity-75">
-                </div>
-                <h5 class="text-sm text-gray-900 group-hover:text-indigo-600 line-clamp-2">
-                  {{ article.title }}
-                </h5>
-              </router-link>
-            </div>
-          </div>
-        </div>
-      </template>
-    </div>
+            <div v-if="resourceMenuOpen" class="absolute left-1/2  mt-3 w-screen max-w-7xl -translate-x-1/2 z-[100]"
+              style="position: fixed; top: 64px; left: 50%;">
+              <div class="bg-white shadow-lg ring-1 ring-gray-900/5">
+                <div class="grid grid-cols-4 gap-8 p-8">
+                  <!-- 遍历主要分类 -->
+                  <template v-for="category in getResourceCategories" :key="category.name">
+                    <div>
+                      <h3 class="text-base font-medium text-gray-900 mb-4">{{ category.name }}</h3>
+                      <nav class="space-y-2">
+                        <router-link v-for="item in category.children" :key="item.href" :to="item.href"
+                          class="flex items-center space-x-3 px-2 py-2 hover:bg-gray-50 group">
+                          <component :is="getIcon(item.icon)"
+                            class="flex-shrink-0 h-5 w-5 text-gray-400 group-hover:text-indigo-600" />
+                          <div>
+                            <span class="text-sm text-gray-900 group-hover:text-indigo-600">{{ item.name }}</span>
+                            <p class="text-xs text-gray-500">{{ item.description }}</p>
+                          </div>
+                        </router-link>
+                      </nav>
 
-    <!-- 底部链接 -->
-    <div class="border-t border-gray-100 p-4">
-      <router-link to="/resources" 
-        class="flex items-center justify-between text-sm text-indigo-600 hover:text-indigo-500">
-        <span>查看全部资源</span>
-        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-          <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"/>
-        </svg>
-      </router-link>
-    </div>
-  </div>
-</div>
+                      <!-- 如果有推荐文章，显示在分类下方 -->
+                      <div v-if="category.featured" class="mt-4 pt-4 border-t border-gray-100">
+                        <h4 class="text-sm font-medium text-gray-900 mb-3">{{ category.featured.title }}</h4>
+                        <div class="space-y-3">
+                          <router-link v-for="article in category.featured.articles" :key="article.href"
+                            :to="article.href" class="group block">
+                            <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden mb-2">
+                              <img :src="article.image" :alt="article.title"
+                                class="object-cover w-full h-full group-hover:opacity-75">
+                            </div>
+                            <h5 class="text-sm text-gray-900 group-hover:text-indigo-600 line-clamp-2">
+                              {{ article.title }}
+                            </h5>
+                          </router-link>
+                        </div>
+                      </div>
+                    </div>
+                  </template>
+                </div>
+
+                <!-- 底部链接 -->
+                <div class="border-t border-gray-100 p-4">
+                  <router-link to="/resources"
+                    class="flex items-center justify-between text-sm text-indigo-600 hover:text-indigo-500">
+                    <span>查看全部资源</span>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" />
+                    </svg>
+                  </router-link>
+                </div>
+              </div>
+            </div>
           </div>
         </template>
 
         <router-link to="/pro"
-          class="text-sm font-semibold leading-6 text-yellow-600 hover:text-yellow-500 flex items-center">
+          class="text-base leading-6 text-yellow-600 hover:text-yellow-500 flex items-center">
           <svg class="w-5 h-5 mr-1" viewBox="0 0 24 24" fill="none" stroke="currentColor">
             <path d="M5 16L3 5L8.5 10L12 4L15.5 10L21 5L19 16H5Z" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round" />
@@ -110,11 +108,11 @@
         <template v-if="!isAuthenticated">
           <!-- 未登录状态 -->
           <div class="hidden lg:block">
-            <router-link to="/login" class="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600">
+            <router-link to="/login" class="text-base  leading-6 text-gray-900 hover:text-indigo-600">
               登录
             </router-link>
             <router-link to="/register"
-              class="ml-4 text-sm font-semibold leading-6 text-white bg-indigo-600 px-3 py-2 rounded-md hover:bg-indigo-500">
+              class="ml-4 text-base  leading-6 text-white bg-indigo-600 px-3 py-2 rounded-md hover:bg-indigo-500">
               注册
             </router-link>
           </div>
@@ -152,7 +150,7 @@
     <div v-if="userMenuOpen" :class="[
       'fixed lg:absolute',
       'top-[72px]',
-      'bg-white shadow-lg z-40',
+      'bg-white shadow-lg z-[100]',
       'inset-x-0 lg:inset-x-auto',
       'lg:w-64 lg:rounded-lg'
     ]" :style="{
@@ -528,5 +526,20 @@ onUnmounted(() => {
 .dropdown-leave-to {
   opacity: 0;
   transform: translateY(-10px);
+}
+/* 确保下拉菜单始终在最上层 */
+:deep(.el-dropdown-menu) {
+  z-index: 3000 !important;
+}
+
+/* 调整资源菜单定位 */
+.resource-menu {
+  position: static;
+}
+
+@media (min-width: 1024px) {
+  .resource-menu {
+    position: relative;
+  }
 }
 </style>

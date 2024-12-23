@@ -7,6 +7,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # 用户相关路由
     path('', include('users.urls')),
+    path('api-auth/', include('rest_framework.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 if settings.DEBUG:

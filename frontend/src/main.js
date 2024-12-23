@@ -1,4 +1,3 @@
-// frontend/src/main.js
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import piniaPluginPersist from 'pinia-plugin-persist'
@@ -8,6 +7,9 @@ import axios from 'axios'
 import './assets/css/input.css'
 import { showToast } from '@/components/ToastMessage'
 import store from './store'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+
 // axios 配置
 axios.defaults.headers.common['Content-Type'] = 'application/json'
 
@@ -36,15 +38,22 @@ axios.interceptors.response.use(
     }
 )
 
+// 创建应用实例
 const app = createApp(App)
+
+// 创建 Pinia 实例
 const pinia = createPinia()
 pinia.use(piniaPluginPersist)
+
+// 按顺序使用插件
+app.use(ElementPlus)  // 移到这里
 app.use(store)
 app.use(pinia)
 app.use(router)
-app.config.globalProperties.$axios = axios
 
-// 添加全局 Toast 方法
+// 配置全局属性
+app.config.globalProperties.$axios = axios
 app.config.globalProperties.$toast = showToast
 
+// 最后挂载
 app.mount('#app')

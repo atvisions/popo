@@ -932,3 +932,378 @@ INFO 2024-12-22 15:50:00,411 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
 INFO 2024-12-22 15:50:00,477 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
 INFO 2024-12-22 15:50:10,633 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 522
 INFO 2024-12-22 15:50:10,742 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 15:37:12,826 autoreload Watching for file changes with StatReloader
+INFO 2024-12-23 15:39:11,706 autoreload Watching for file changes with StatReloader
+INFO 2024-12-23 15:40:07,972 basehttp "OPTIONS /v1/auth/token/refresh/ HTTP/1.1" 200 0
+WARNING 2024-12-23 15:40:08,162 log Bad Request: /v1/auth/token/refresh/
+WARNING 2024-12-23 15:40:08,162 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 400 83
+INFO 2024-12-23 15:40:20,843 basehttp "OPTIONS /v1/auth/login/password/ HTTP/1.1" 200 0
+WARNING 2024-12-23 15:40:20,862 log Not Found: /v1/auth/login/password/
+WARNING 2024-12-23 15:40:20,862 basehttp "POST /v1/auth/login/password/ HTTP/1.1" 404 79
+INFO 2024-12-23 15:40:34,439 basehttp "OPTIONS /v1/auth/sms/send/ HTTP/1.1" 200 0
+INFO 2024-12-23 15:40:34,969 basehttp "POST /v1/auth/sms/send/ HTTP/1.1" 200 115
+INFO 2024-12-23 15:40:54,619 basehttp "OPTIONS /v1/auth/register/ HTTP/1.1" 200 0
+INFO 2024-12-23 15:40:54,815 basehttp "POST /v1/auth/register/ HTTP/1.1" 200 647
+INFO 2024-12-23 15:40:54,957 basehttp "POST /v1/auth/login/password/ HTTP/1.1" 200 647
+INFO 2024-12-23 15:40:54,965 basehttp "OPTIONS /v1/users/profile/ HTTP/1.1" 200 0
+INFO 2024-12-23 15:40:54,973 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 15:40:55,096 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 15:40:55,131 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 15:41:16,408 basehttp "OPTIONS /v1/auth/logout/ HTTP/1.1" 200 0
+INFO 2024-12-23 15:41:16,424 basehttp "POST /v1/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-23 15:44:28,632 basehttp "POST /v1/auth/login/password/ HTTP/1.1" 200 647
+INFO 2024-12-23 15:44:28,648 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 15:44:44,600 basehttp "POST /v1/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-23 15:47:17,682 basehttp "POST /v1/auth/login/password/ HTTP/1.1" 200 647
+INFO 2024-12-23 15:47:17,699 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 15:47:20,550 basehttp "POST /v1/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-23 15:48:56,166 basehttp "POST /v1/auth/login/password/ HTTP/1.1" 200 647
+INFO 2024-12-23 15:48:56,191 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 15:48:59,753 basehttp "POST /v1/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-23 15:51:09,345 basehttp "POST /v1/auth/login/password/ HTTP/1.1" 200 647
+INFO 2024-12-23 15:51:09,361 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 15:51:16,186 basehttp "POST /v1/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-23 15:51:24,514 basehttp "POST /v1/auth/login/password/ HTTP/1.1" 200 647
+INFO 2024-12-23 15:51:24,543 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 15:51:30,334 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 15:51:30,360 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 15:51:36,551 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 15:51:36,977 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 15:51:37,444 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 15:51:37,767 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 15:51:38,104 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 15:51:38,427 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 15:51:38,435 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 15:55:57,808 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 15:55:58,199 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 15:55:59,284 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 15:55:59,291 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 15:59:22,294 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 15:59:22,347 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 15:59:22,364 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 15:59:22,369 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 15:59:22,377 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 16:00:26,204 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 16:00:26,303 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 16:00:26,399 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 16:00:26,406 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 16:00:26,420 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 16:00:38,546 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 16:00:38,663 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 16:00:38,673 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 16:00:38,683 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 16:00:38,695 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 16:00:45,766 basehttp "OPTIONS /v1/users/profile/avatar/ HTTP/1.1" 200 0
+INFO 2024-12-23 16:00:45,791 basehttp "POST /v1/users/profile/avatar/ HTTP/1.1" 200 122
+INFO 2024-12-23 16:00:45,801 basehttp "GET /media/avatars/logo108_86hdoah.png HTTP/1.1" 200 11129
+INFO 2024-12-23 16:00:52,569 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 16:00:52,633 basehttp "GET /media/avatars/logo108_86hdoah.png HTTP/1.1" 304 0
+INFO 2024-12-23 16:00:52,650 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 269
+INFO 2024-12-23 16:00:52,658 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 269
+INFO 2024-12-23 16:00:52,663 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 269
+INFO 2024-12-23 16:00:52,670 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 269
+INFO 2024-12-23 16:00:55,600 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 16:00:55,646 basehttp "GET /media/avatars/logo108_86hdoah.png HTTP/1.1" 304 0
+INFO 2024-12-23 16:00:55,648 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 269
+INFO 2024-12-23 16:00:55,661 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 269
+INFO 2024-12-23 16:00:55,690 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 269
+INFO 2024-12-23 16:00:55,696 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 269
+INFO 2024-12-23 16:01:00,886 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 16:01:01,017 basehttp "GET /media/avatars/logo108_86hdoah.png HTTP/1.1" 304 0
+INFO 2024-12-23 16:01:01,055 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 269
+INFO 2024-12-23 16:01:01,063 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 269
+INFO 2024-12-23 16:01:01,072 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 269
+INFO 2024-12-23 16:01:01,080 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 269
+INFO 2024-12-23 16:03:38,359 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 16:03:38,727 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 16:03:39,414 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 16:03:40,340 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 16:03:42,571 basehttp "GET /media/avatars/logo108_86hdoah.png HTTP/1.1" 304 0
+INFO 2024-12-23 16:03:42,582 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 269
+INFO 2024-12-23 16:03:42,596 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 269
+INFO 2024-12-23 16:03:42,597 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 16:03:47,075 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 16:04:04,179 basehttp "POST /v1/auth/sms/send/ HTTP/1.1" 200 119
+INFO 2024-12-23 16:04:22,211 basehttp "OPTIONS /v1/users/account/phone/ HTTP/1.1" 200 0
+INFO 2024-12-23 16:04:22,242 basehttp "POST /v1/users/account/phone/ HTTP/1.1" 200 77
+INFO 2024-12-23 16:04:22,260 basehttp "POST /v1/auth/logout/ HTTP/1.1" 200 37
+INFO 2024-12-23 16:04:29,998 basehttp "POST /v1/auth/login/password/ HTTP/1.1" 200 647
+INFO 2024-12-23 16:04:30,008 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 269
+INFO 2024-12-23 16:04:30,017 basehttp "GET /media/avatars/logo108_86hdoah.png HTTP/1.1" 304 0
+INFO 2024-12-23 16:04:30,026 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 16:04:43,161 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 269
+INFO 2024-12-23 16:04:43,172 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 269
+INFO 2024-12-23 16:04:43,175 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 16:12:29,721 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 16:12:29,763 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 269
+INFO 2024-12-23 16:12:29,764 basehttp "GET /media/avatars/logo108_86hdoah.png HTTP/1.1" 304 0
+INFO 2024-12-23 16:12:29,976 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 269
+INFO 2024-12-23 16:12:29,987 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 269
+INFO 2024-12-23 16:12:30,008 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 269
+WARNING 2024-12-23 16:18:50,022 log Not Found: /api/v1/users/profile/
+WARNING 2024-12-23 16:18:50,023 basehttp "GET /api/v1/users/profile/ HTTP/1.1" 404 2997
+INFO 2024-12-23 16:23:30,837 autoreload /Users/liuzhao/Documents/Projects/popowork/users/views/profile.py changed, reloading.
+INFO 2024-12-23 16:23:31,273 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-23 16:24:45,129 log Not Found: /api/v1/users/profile/
+WARNING 2024-12-23 16:24:45,132 basehttp "GET /api/v1/users/profile/ HTTP/1.1" 404 2994
+WARNING 2024-12-23 16:24:55,114 log Not Found: /api/v1/users/profile/
+WARNING 2024-12-23 16:24:55,114 basehttp "GET /api/v1/users/profile/ HTTP/1.1" 404 2997
+WARNING 2024-12-23 16:26:48,509 log Not Found: /api/v1/users/profile/
+WARNING 2024-12-23 16:26:48,510 basehttp "GET /api/v1/users/profile/ HTTP/1.1" 404 2994
+WARNING 2024-12-23 16:28:11,756 log Not Found: /api/v1/
+WARNING 2024-12-23 16:28:11,757 basehttp "GET /api/v1/ HTTP/1.1" 404 2955
+WARNING 2024-12-23 16:28:18,329 log Not Found: /api
+WARNING 2024-12-23 16:28:18,329 basehttp "GET /api HTTP/1.1" 404 2943
+WARNING 2024-12-23 16:28:56,097 log Not Found: /v1/profile/
+WARNING 2024-12-23 16:28:56,099 basehttp "GET /v1/profile/ HTTP/1.1" 404 2967
+INFO 2024-12-23 16:33:08,728 autoreload /Users/liuzhao/Documents/Projects/popowork/users/urls.py changed, reloading.
+INFO 2024-12-23 16:33:09,103 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-23 16:33:29,752 log Not Found: /api/v1/users/profile/
+WARNING 2024-12-23 16:33:29,758 basehttp "GET /api/v1/users/profile/ HTTP/1.1" 404 3161
+INFO 2024-12-23 16:35:09,115 autoreload /Users/liuzhao/Documents/Projects/popowork/config/urls.py changed, reloading.
+INFO 2024-12-23 16:35:09,492 autoreload Watching for file changes with StatReloader
+INFO 2024-12-23 16:36:37,301 autoreload /Users/liuzhao/Documents/Projects/popowork/users/urls.py changed, reloading.
+INFO 2024-12-23 16:36:37,699 autoreload Watching for file changes with StatReloader
+INFO 2024-12-23 16:36:42,026 autoreload /Users/liuzhao/Documents/Projects/popowork/users/urls.py changed, reloading.
+INFO 2024-12-23 16:36:42,308 autoreload Watching for file changes with StatReloader
+INFO 2024-12-23 16:37:12,334 basehttp "GET /api-auth/login/ HTTP/1.1" 200 2699
+INFO 2024-12-23 16:37:12,380 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2024-12-23 16:37:12,384 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2024-12-23 16:37:12,385 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2024-12-23 16:37:12,386 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2024-12-23 16:37:12,609 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2024-12-23 16:38:28,027 autoreload Watching for file changes with StatReloader
+INFO 2024-12-23 16:38:35,191 basehttp "POST /api-auth/login/ HTTP/1.1" 302 0
+WARNING 2024-12-23 16:38:35,202 log Not Found: /accounts/profile/
+WARNING 2024-12-23 16:38:35,202 basehttp "GET /accounts/profile/ HTTP/1.1" 404 3102
+WARNING 2024-12-23 16:39:24,540 log Not Found: /api/v1/users/profile/
+WARNING 2024-12-23 16:39:24,541 basehttp "GET /api/v1/users/profile/ HTTP/1.1" 404 3114
+WARNING 2024-12-23 16:40:26,784 log Not Found: /api/v1/users/profile/
+WARNING 2024-12-23 16:40:26,785 basehttp "GET /api/v1/users/profile/ HTTP/1.1" 404 3114
+WARNING 2024-12-23 16:41:49,813 log Unauthorized: /v1/users/profile/
+WARNING 2024-12-23 16:41:49,814 basehttp "GET /v1/users/profile/ HTTP/1.1" 401 5158
+INFO 2024-12-23 16:41:49,886 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2024-12-23 16:41:49,887 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2024-12-23 16:41:49,893 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2024-12-23 16:41:49,893 basehttp "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2024-12-23 16:41:49,894 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2024-12-23 16:41:49,898 basehttp "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2024-12-23 16:41:49,899 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2024-12-23 16:42:05,522 basehttp "GET /api-auth/login/?next=/v1/users/profile/ HTTP/1.1" 200 2717
+INFO 2024-12-23 16:42:12,246 basehttp "POST /api-auth/login/ HTTP/1.1" 302 0
+WARNING 2024-12-23 16:42:12,252 log Unauthorized: /v1/users/profile/
+WARNING 2024-12-23 16:42:12,252 basehttp "GET /v1/users/profile/ HTTP/1.1" 401 5158
+WARNING 2024-12-23 16:42:22,421 log Unauthorized: /v1/users/profile/
+WARNING 2024-12-23 16:42:22,422 basehttp "GET /v1/users/profile/?format=json HTTP/1.1" 401 43
+WARNING 2024-12-23 16:42:28,722 log Unauthorized: /v1/users/profile/
+WARNING 2024-12-23 16:42:28,723 basehttp "GET /v1/users/profile/ HTTP/1.1" 401 5158
+WARNING 2024-12-23 16:42:42,727 log Unauthorized: /v1/users/profile/
+WARNING 2024-12-23 16:42:42,728 basehttp "GET /v1/users/profile/ HTTP/1.1" 401 5158
+WARNING 2024-12-23 16:45:24,586 log Not Found: /api/v1/users/profile/
+WARNING 2024-12-23 16:45:24,587 basehttp "GET /api/v1/users/profile/ HTTP/1.1" 404 3114
+WARNING 2024-12-23 16:45:28,650 log Unauthorized: /v1/users/profile/
+WARNING 2024-12-23 16:45:28,650 basehttp "GET /v1/users/profile/ HTTP/1.1" 401 43
+WARNING 2024-12-23 16:46:07,570 log Not Found: /users/login/password/
+WARNING 2024-12-23 16:46:07,570 basehttp "POST /users/login/password/ HTTP/1.1" 404 3112
+WARNING 2024-12-23 16:46:49,463 log Not Found: /v1/password
+WARNING 2024-12-23 16:46:49,464 basehttp "POST /v1/password HTTP/1.1" 404 3082
+WARNING 2024-12-23 16:47:38,898 log Not Found: /password
+WARNING 2024-12-23 16:47:38,899 basehttp "POST /password HTTP/1.1" 404 3073
+WARNING 2024-12-23 16:47:56,252 log Not Found: /password
+WARNING 2024-12-23 16:47:56,254 basehttp "POST /password HTTP/1.1" 404 3073
+WARNING 2024-12-23 16:48:05,710 log Not Found: /password
+WARNING 2024-12-23 16:48:05,710 basehttp "POST /password HTTP/1.1" 404 3076
+WARNING 2024-12-23 16:48:14,613 log Not Found: /user/password
+WARNING 2024-12-23 16:48:14,613 basehttp "POST /user/password HTTP/1.1" 404 3091
+INFO 2024-12-23 16:49:09,246 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 16:49:09,371 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 269
+INFO 2024-12-23 16:49:09,388 basehttp "GET /media/avatars/logo108_86hdoah.png HTTP/1.1" 304 0
+INFO 2024-12-23 16:49:09,397 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 269
+INFO 2024-12-23 16:49:09,412 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 269
+INFO 2024-12-23 16:49:09,507 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 269
+INFO 2024-12-23 16:49:10,871 basehttp "POST /v1/auth/logout/ HTTP/1.1" 200 37
+WARNING 2024-12-23 16:49:18,034 log Not Found: /v1/auth/sms/send/
+WARNING 2024-12-23 16:49:18,034 basehttp "POST /v1/auth/sms/send/ HTTP/1.1" 404 79
+INFO 2024-12-23 16:49:27,145 basehttp "POST /v1/auth/sms/send/ HTTP/1.1" 200 121
+INFO 2024-12-23 16:51:29,434 autoreload /Users/liuzhao/Documents/Projects/popowork/users/urls.py changed, reloading.
+INFO 2024-12-23 16:51:29,825 autoreload Watching for file changes with StatReloader
+WARNING 2024-12-23 16:53:23,283 log Not Found: /user/auth/password
+WARNING 2024-12-23 16:53:23,284 basehttp "POST /user/auth/password HTTP/1.1" 404 3098
+WARNING 2024-12-23 16:53:54,599 log Not Found: /user/auth/login/password/
+WARNING 2024-12-23 16:53:54,600 basehttp "POST /user/auth/login/password/ HTTP/1.1" 404 3119
+WARNING 2024-12-23 16:54:03,709 log Not Found: /user/login/password/
+WARNING 2024-12-23 16:54:03,709 basehttp "POST /user/login/password/ HTTP/1.1" 404 3104
+WARNING 2024-12-23 16:54:13,472 log Not Found: /users/login/password/
+WARNING 2024-12-23 16:54:13,473 basehttp "POST /users/login/password/ HTTP/1.1" 404 3107
+WARNING 2024-12-23 16:58:24,961 log Not Found: /v1/auth/login/password/
+WARNING 2024-12-23 16:58:24,962 basehttp "POST /v1/auth/login/password/ HTTP/1.1" 404 79
+WARNING 2024-12-23 16:58:44,954 log Bad Request: /v1/auth/login/password/
+WARNING 2024-12-23 16:58:44,955 basehttp "POST /v1/auth/login/password/ HTTP/1.1" 400 85
+INFO 2024-12-23 16:58:53,153 basehttp "POST /v1/auth/login/password/ HTTP/1.1" 200 647
+WARNING 2024-12-23 16:59:32,258 log Not Found: /v1/auth/sms/code/
+WARNING 2024-12-23 16:59:32,258 basehttp "POST /v1/auth/sms/code/ HTTP/1.1" 404 4567
+INFO 2024-12-23 16:59:55,091 basehttp "POST /v1/auth/sms/send/ HTTP/1.1" 200 115
+ERROR 2024-12-23 17:00:42,882 log Internal Server Error: /v1/auth/register
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/v1/auth/register/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-23 17:00:42,883 basehttp "POST /v1/auth/register HTTP/1.1" 500 72822
+WARNING 2024-12-23 17:01:27,349 log Bad Request: /v1/auth/register/
+WARNING 2024-12-23 17:01:27,350 basehttp "POST /v1/auth/register/ HTTP/1.1" 400 96
+INFO 2024-12-23 17:01:50,819 basehttp "POST /v1/auth/register/ HTTP/1.1" 200 647
+INFO 2024-12-23 17:02:46,015 basehttp "POST /v1/auth/login/password/ HTTP/1.1" 200 647
+WARNING 2024-12-23 17:03:31,383 log Not Found: /v1/auth/sms/send/
+WARNING 2024-12-23 17:03:31,383 basehttp "POST /v1/auth/sms/send/ HTTP/1.1" 404 79
+WARNING 2024-12-23 17:03:59,156 log Not Found: /api/auth/password/reset/
+WARNING 2024-12-23 17:03:59,157 basehttp "POST /api/auth/password/reset/ HTTP/1.1" 404 3113
+WARNING 2024-12-23 17:04:11,786 log Not Found: /v1/auth/password/reset/
+WARNING 2024-12-23 17:04:11,787 basehttp "POST /v1/auth/password/reset/ HTTP/1.1" 404 79
+WARNING 2024-12-23 17:04:30,706 log Bad Request: /v1/auth/password/reset/
+WARNING 2024-12-23 17:04:30,707 basehttp "POST /v1/auth/password/reset/ HTTP/1.1" 400 84
+WARNING 2024-12-23 17:06:27,218 log Unauthorized: /v1/auth/logout/
+WARNING 2024-12-23 17:06:27,219 basehttp "POST /v1/auth/logout/ HTTP/1.1" 401 43
+WARNING 2024-12-23 17:07:39,072 log Not Found: /v1/account/delete
+WARNING 2024-12-23 17:07:39,072 basehttp "POST /v1/account/delete HTTP/1.1" 404 3092
+WARNING 2024-12-23 17:07:46,640 log Not Found: /v1/account/delete/
+WARNING 2024-12-23 17:07:46,641 basehttp "POST /v1/account/delete/ HTTP/1.1" 404 3095
+WARNING 2024-12-23 17:08:22,418 log Unauthorized: /v1/users/account/delete/
+WARNING 2024-12-23 17:08:22,418 basehttp "POST /v1/users/account/delete/ HTTP/1.1" 401 179
+WARNING 2024-12-23 17:09:06,820 log Not Found: /v1/account/password
+WARNING 2024-12-23 17:09:06,820 basehttp "POST /v1/account/password HTTP/1.1" 404 3098
+ERROR 2024-12-23 17:09:31,166 log Internal Server Error: /v1/users/account/password
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/v1/users/account/password/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-23 17:09:31,167 basehttp "POST /v1/users/account/password HTTP/1.1" 500 73347
+INFO 2024-12-23 17:09:57,279 basehttp "POST /v1/auth/login/password/ HTTP/1.1" 200 647
+ERROR 2024-12-23 17:10:18,102 log Internal Server Error: /v1/users/account/password
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/v1/users/account/password/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-23 17:10:18,102 basehttp "POST /v1/users/account/password HTTP/1.1" 500 73346
+ERROR 2024-12-23 17:10:32,156 log Internal Server Error: /v1/users/account/password
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/v1/users/account/password/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-23 17:10:32,156 basehttp "POST /v1/users/account/password HTTP/1.1" 500 73346
+INFO 2024-12-23 17:10:56,860 basehttp "POST /v1/auth/login/password/ HTTP/1.1" 200 647
+INFO 2024-12-23 17:10:56,878 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 17:10:59,409 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 17:11:13,494 basehttp "OPTIONS /v1/users/account/password/ HTTP/1.1" 200 0
+INFO 2024-12-23 17:11:13,846 basehttp "POST /v1/users/account/password/ HTTP/1.1" 200 43
+INFO 2024-12-23 17:11:13,871 basehttp "POST /v1/auth/logout/ HTTP/1.1" 200 37
+WARNING 2024-12-23 17:11:44,160 log Bad Request: /v1/users/account/password/
+WARNING 2024-12-23 17:11:44,160 basehttp "POST /v1/users/account/password/ HTTP/1.1" 400 152
+WARNING 2024-12-23 17:12:00,293 log Bad Request: /v1/users/account/password/
+WARNING 2024-12-23 17:12:00,293 basehttp "POST /v1/users/account/password/ HTTP/1.1" 400 92
+WARNING 2024-12-23 17:12:29,653 log Bad Request: /v1/auth/sms/send/
+WARNING 2024-12-23 17:12:29,654 basehttp "POST /v1/auth/sms/send/ HTTP/1.1" 400 88
+WARNING 2024-12-23 17:13:36,987 log Not Found: /api/users/account/phone
+WARNING 2024-12-23 17:13:36,988 basehttp "POST /api/users/account/phone HTTP/1.1" 404 3110
+ERROR 2024-12-23 17:13:43,371 log Internal Server Error: /v1/users/account/phone
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/v1/users/account/phone/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-23 17:13:43,371 basehttp "POST /v1/users/account/phone HTTP/1.1" 500 73298
+WARNING 2024-12-23 17:14:08,980 log Unauthorized: /v1/users/account/phone/
+WARNING 2024-12-23 17:14:08,981 basehttp "POST /v1/users/account/phone/ HTTP/1.1" 401 179
+WARNING 2024-12-23 17:14:43,635 log Unauthorized: /v1/auth/logout/
+WARNING 2024-12-23 17:14:43,636 basehttp "POST /v1/auth/logout/ HTTP/1.1" 401 43
+WARNING 2024-12-23 17:15:10,282 log Unauthorized: /v1/users/profile/
+WARNING 2024-12-23 17:15:10,283 basehttp "GET /v1/users/profile/ HTTP/1.1" 401 43
+WARNING 2024-12-23 17:16:05,124 log Unauthorized: /v1/users/profile/
+WARNING 2024-12-23 17:16:05,125 basehttp "GET /v1/users/profile/ HTTP/1.1" 401 43
+WARNING 2024-12-23 17:17:14,948 log Unauthorized: /v1/users/profile/
+WARNING 2024-12-23 17:17:14,949 basehttp "GET /v1/users/profile/ HTTP/1.1" 401 43
+WARNING 2024-12-23 17:17:38,696 log Unauthorized: /v1/users/profile/
+WARNING 2024-12-23 17:17:38,697 basehttp "GET /v1/users/profile/ HTTP/1.1" 401 43
+INFO 2024-12-23 17:19:30,463 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 17:19:34,768 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+WARNING 2024-12-23 17:20:21,961 log Unauthorized: /v1/users/profile/
+WARNING 2024-12-23 17:20:21,962 basehttp "PUT /v1/users/profile/ HTTP/1.1" 401 43
+ERROR 2024-12-23 17:21:08,605 log Internal Server Error: /v1/users/profile
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 192.168.3.16:8000/v1/users/profile/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-23 17:21:08,606 basehttp "PUT /v1/users/profile HTTP/1.1" 500 73203
+INFO 2024-12-23 17:22:03,077 basehttp "POST /v1/auth/login/password/ HTTP/1.1" 200 647
+INFO 2024-12-23 17:22:03,092 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 17:22:05,490 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 17:22:05,527 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 17:22:05,536 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 237
+INFO 2024-12-23 17:22:21,753 basehttp "POST /v1/users/profile/avatar/ HTTP/1.1" 200 122
+INFO 2024-12-23 17:22:21,761 basehttp "GET /media/avatars/logo108_ys7a7D0.png HTTP/1.1" 200 11129
+ERROR 2024-12-23 17:23:00,871 log Internal Server Error: /v1/users/profile
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 192.168.3.16:8000/v1/users/profile/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-23 17:23:00,872 basehttp "PUT /v1/users/profile HTTP/1.1" 500 73209
+ERROR 2024-12-23 17:23:55,877 log Internal Server Error: /v1/users/profile
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/utils/deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/middleware/common.py", line 108, in process_response
+    return self.response_redirect_class(self.get_full_path_with_slash(request))
+  File "/opt/anaconda3/envs/popo-env/lib/python3.8/site-packages/django/middleware/common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to 192.168.3.16:8000/v1/users/profile/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+ERROR 2024-12-23 17:23:55,879 basehttp "PUT /v1/users/profile HTTP/1.1" 500 73211
+INFO 2024-12-23 17:24:48,817 basehttp "PUT /v1/users/profile/ HTTP/1.1" 200 472
+INFO 2024-12-23 17:24:58,527 basehttp "POST /v1/auth/token/refresh/ HTTP/1.1" 200 519
+INFO 2024-12-23 17:24:58,596 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 448
+INFO 2024-12-23 17:24:58,617 basehttp "GET /media/avatars/logo108_ys7a7D0.png HTTP/1.1" 304 0
+INFO 2024-12-23 17:24:58,707 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 448
+INFO 2024-12-23 17:24:58,765 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 448
+INFO 2024-12-23 17:24:58,780 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 448
+INFO 2024-12-23 17:25:08,628 basehttp "GET /v1/users/profile/ HTTP/1.1" 200 448

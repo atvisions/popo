@@ -150,32 +150,42 @@ export default createStore({
     },
 
     SET_USER_INFO(state, userInfo) {
+      // 保存原有的手机号
       const accountPhone = state.userPhone
       
+      // 处理可能的不同数据结构
+      const userData = userInfo.data || userInfo
+      const profile = userData.profile || {}
+      const avatar = userData.avatar || profile.avatar
+      
+      // 更新状态
       state.userInfo = {
         ...state.userInfo,
-        ...userInfo,
+        ...userData,
         accountPhone,
         profile: {
           ...(state.userInfo?.profile || {}),
-          ...(userInfo.profile || {}),
-          avatar: userInfo.data?.avatar || userInfo.profile?.avatar
+          ...profile,
+          avatar  // 确保头像信息被正确保存
         }
       }
-    
-      if (userInfo?.id || userInfo?.data?.id) {
-        state.userId = userInfo.id || userInfo.data?.id
+      
+      // 更新用户 ID
+      if (userData.id) {
+        state.userId = userData.id
       }
-    
-      const avatarPath = userInfo.data?.avatar || userInfo.profile?.avatar
-      if (avatarPath) {
-        state.userAvatar = avatarPath
+      
+      // 更新头像
+      if (avatar) {
+        state.userAvatar = avatar
+        // 根据记住我选项决定存储位置
         const storage = state.rememberMe ? localStorage : sessionStorage
-        storage.setItem('user_avatar', avatarPath)
+        storage.setItem('user_avatar', avatar)
       }
     },
 
     CLEAR_AUTH(state) {
+      // 清除状态
       state.userInfo = null
       state.isAuthenticated = false
       state.accessToken = null
@@ -185,18 +195,35 @@ export default createStore({
       state.userId = null
       state.userAvatar = null
       state.rememberMe = false
+
+      // 清除定时器
       if (refreshInterval) {
         clearInterval(refreshInterval)
         refreshInterval = null
       }
-      // 只清除认证相关的 localStorage 项
+
+      // 清除 TOKEN_CONFIG 中定义的存储项
       const { STORAGE_KEYS } = TOKEN_CONFIG
       Object.values(STORAGE_KEYS).forEach(key => {
         localStorage.removeItem(key)
       })
 
+      // 清除其他相关存储项
+      const additionalKeys = [
+        'account_phone',
+        'redirectPath',
+        'user_id',
+        'user_avatar'
+      ]
+
+      // 从 localStorage 和 sessionStorage 都清除
+      additionalKeys.forEach(key => {
+        localStorage.removeItem(key)
+        sessionStorage.removeItem(key)
+      })
+
       if (process.env.NODE_ENV === 'development') {
-        console.log('Auth state cleared')
+        console.log('Auth state and storage cleared completely')
       }
     }
   },
@@ -313,7 +340,7 @@ export default createStore({
       return userInfo
     },
 
-    async loginWithPassword({ commit }, { credentials, remember }) {
+    async loginWithPassword({ commit, dispatch }, { credentials, remember }) {
       try {
         const response = await publicRequest({
           url: '/v1/auth/login/password/',
@@ -329,36 +356,19 @@ export default createStore({
           throw new Error(message || '登录失败')
         }
     
-        // 清除旧的 token 信息
-        localStorage.removeItem('access_token')
-        localStorage.removeItem('refresh_token')
-        localStorage.removeItem('token_expiration')
-    
-        const expirationTime = new Date().getTime() + (
-          remember ? 
-          TOKEN_CONFIG.REMEMBER_EXPIRATION_TIME : 
-          TOKEN_CONFIG.NORMAL_EXPIRATION_TIME
-        )
-    
-        // 保存新的认证信息
-        const initialUserData = {
+        // 保存认证信息
+        commit('SET_AUTH_DATA', {
           tokens: data.tokens,
           user: data.user,
-          expirationTime,
           remember,
           phone: credentials.phone
-        }
+        })
     
-        if (process.env.NODE_ENV === 'development') {
-          console.log('Login successful, saving new tokens')
-        }
-    
-        commit('SET_AUTH_DATA', initialUserData)
-    
+        // 立即获取完整的用户信息
         try {
-          const userResponse = await getUserInfo()
-          if (userResponse?.data?.code === 200) {
-            commit('SET_USER_INFO', userResponse.data.data)
+          const userInfo = await dispatch('fetchUserInfo')
+          if (userInfo) {
+            commit('SET_USER_INFO', userInfo)
           }
         } catch (error) {
           console.error('获取用户完整信息失败：', error)

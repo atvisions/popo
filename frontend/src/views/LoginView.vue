@@ -1,6 +1,7 @@
 <template>
+  <div class="flex flex-col min-h-screen">
   <HeadView />
-  <div class="min-h-screen pt-14">
+  <main class="flex-1 pt-14 relative z-[1] bg-gray-50">
     <!-- Logo 部分 -->
     <div class="sm:mx-auto sm:w-full sm:max-w-md pt-8">
       <h2 class="mt-6 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">登录账号</h2>
@@ -137,12 +138,8 @@
         </div>
       </div>
     </div>
-  </div>
-  <WeChatLoginModal 
-  :visible="showWeChatLogin"
-  @close="handleWeChatClose" 
-  @login-success="handleWeChatLoginSuccess"
-/>
+</main>
+</div>
 </template>
 
 <script setup>
@@ -164,7 +161,7 @@ const rememberMe = ref(false)
 const showPassword = ref(false)
 const phoneError = ref('')
 const passwordError = ref('')
-const showWeChatLogin = ref(false)
+
 
 // 表单验证状态
 const isFormValid = computed(() => {

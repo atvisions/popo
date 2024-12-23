@@ -1,6 +1,7 @@
 <template>
+  <div class="flex flex-col min-h-screen">
   <HeadView />
-  <div class="min-h-screen bg-gray-50 pt-14">
+  <main class="flex-1 pt-14 relative z-[1] bg-gray-50">
     <div class="sm:mx-auto sm:w-full sm:max-w-md pt-8">
       <h2 class="mt-6 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">注册账号</h2>
     </div>
@@ -40,14 +41,16 @@
                 type="button"
                 @click="getVerifyCode"
                 :disabled="form.countdown > 0 || sendingCode"
-                class="relative -ml-px inline-flex items-center rounded-r-md px-4 py-2 text-sm font-semibold ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10"
+                class="relative -ml-px whitespace-nowrap inline-flex items-center rounded-r-md px-6 py-2 text-sm font-semibold ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus:z-10 w-[140px]"
                 :class="form.countdown > 0 || sendingCode ? 'text-gray-400 bg-gray-50' : 'text-indigo-600'"
               >
                 <svg v-if="sendingCode" class="animate-spin -ml-1 mr-2 h-4 w-4" fill="none" viewBox="0 0 24 24">
                   <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                   <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                 </svg>
-                {{ sendingCode ? '发送中...' : form.countdown > 0 ? `${form.countdown}s` : '获取验证码' }}
+                <span class="w-full text-center">
+                  {{ sendingCode ? '发送中...' : form.countdown > 0 ? `${form.countdown}s` : '获取验证码' }}
+                </span>
               </button>
             </div>
           </div>
@@ -135,7 +138,9 @@
         </div>
       </div>
     </div>
-  </div>
+
+</main>
+</div>
 </template>
 
 <script setup>

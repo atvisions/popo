@@ -15,9 +15,14 @@ from users.constants import ResponseCode, ResponseMessage
 logger = logging.getLogger('users')
 
 class UserProfileView(ProtectedAPIView, ResponseMixin):
-    """用户资料视图"""
+    """
+    用户资料管理
+    
+    get: 获取用户资料
+    put: 更新用户资料
+    """
     serializer_class = UserProfileSerializer
-
+    
     def get_profile(self, request: Request):
         """获取用户资料"""
         try:
@@ -55,7 +60,8 @@ class UserProfileView(ProtectedAPIView, ResponseMixin):
         serializer = self.serializer_class(
             profile,
             data=request.data,
-            partial=True
+            partial=True,
+            context={'request': request}  # 添加 request 到上下文
         )
         
         if not serializer.is_valid():
@@ -79,13 +85,25 @@ class UserProfileView(ProtectedAPIView, ResponseMixin):
             )
 
 class AvatarUploadView(ProtectedAPIView, ResponseMixin, LoggerMixin):
-    """头像上传视图"""
+    """
+    头像上传管理
+    
+    post: 上传新头像
+    """
     parser_classes = (MultiPartParser, FormParser)
     
     # 允许的文件类型
     ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
     # 最大文件大小 (5MB)
     MAX_FILE_SIZE = 5 * 1024 * 1024
+
+    def get_parsers(self):
+        """
+        添加对 DRF 界面的支持
+        """
+        if self.request.content_type == 'application/x-www-form-urlencoded':
+            return [FormParser()]
+        return [MultiPartParser()]
 
     def validate_avatar(self, avatar) -> Optional[str]:
         """
